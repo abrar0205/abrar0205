@@ -36,6 +36,8 @@
 ![AWS IoT Core](https://img.shields.io/badge/AWS_IoT_Core-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Learning-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+
 
 ### 🔁 CI/CD & Version Control
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -59,8 +61,8 @@
 ![MLOps](https://img.shields.io/badge/MLOps-7B2D8B?style=for-the-badge)
 ![RAG](https://img.shields.io/badge/RAG-FF6B6B?style=for-the-badge)
 ![LLM Workflows](https://img.shields.io/badge/LLM_Workflows-412991?style=for-the-badge)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-Learning-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-Learning-000000?style=for-the-badge&logo=opentelemetry&logoColor=white)
+
+
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.shion.dev/api?username=abrar0205&theme=blue-green&hide_border=false&include_all_commits=false&count_private=false)<br/>
