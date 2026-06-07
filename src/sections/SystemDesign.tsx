@@ -11,7 +11,7 @@ export function SystemDesign() {
     <section id="system-design" className="section-pad">
       <SectionHeading
         eyebrow="System Design"
-        title="How I think about shipping AI tools"
+        title="System Design & Cloud Architecture"
         description="Two architectures I reason about: a production GenAI workflow tool, and a serverless-style cloud pipeline for market analytics."
       />
 
@@ -64,11 +64,12 @@ export function SystemDesign() {
             </div>
             <div className="flex flex-wrap gap-3">
               <CTAButton
-                href={cloudProposal.drawioUrl}
+                href={cloudProposal.caseStudyUrl}
                 external
+                variant="primary"
                 icon={<ArrowUpRightIcon className="h-4 w-4" />}
               >
-                View Architecture File
+                View Architecture Case Study
               </CTAButton>
               <CTAButton
                 href={cloudProposal.repoUrl}

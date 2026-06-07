@@ -15,14 +15,13 @@ export const experiences: Experience[] = [
     title: "AI Workflow Automation Platform",
     label: "Professional Project · Anonymized · Siemens Energy",
     description:
-      "Built backend and workflow components for an internal GenAI platform supporting document-heavy business workflows.",
+      "Built GenAI workflow components supporting document-heavy business processes from ingestion to generated output and deployment.",
     highlights: [
       "5 LLM workflows",
       "17 CrewAI agents",
       "RAG + ChromaDB",
       "FastAPI backend",
-      "React / Next.js",
-      "Docker + AWS + Terraform",
+      "AWS deployment",
     ],
     bullets: [
       "Developed FastAPI services for document ingestion, extraction, semantic search, content generation, and health monitoring.",
@@ -35,11 +34,10 @@ export const experiences: Experience[] = [
     flow: [
       "Documents",
       "Extraction",
-      "Embeddings / ChromaDB",
-      "RAG",
+      "ChromaDB / RAG",
       "CrewAI Agents",
       "Structured Output",
-      "UI Status Tracking",
+      "UI Tracking",
       "Cloud Deployment",
     ],
     stack: [
@@ -63,13 +61,11 @@ export const experiences: Experience[] = [
     description:
       "Built backend components for a connected-vehicle platform handling telemetry, device-state synchronization, and distributed data flow.",
     highlights: [
-      "Python microservices",
+      "15–20% throughput improvement",
       "AWS IoT Core",
       "MQTT",
       "Kafka",
-      "REST APIs",
-      "JMeter / SonarQube",
-      "15–20% throughput",
+      "Python microservices",
     ],
     bullets: [
       "Developed Python microservices for vehicle onboarding, telemetry ingestion, and device-state handling.",
@@ -83,8 +79,8 @@ export const experiences: Experience[] = [
     flow: [
       "Vehicle Data",
       "MQTT / AWS IoT Core",
-      "Python Microservices",
-      "Kafka Pipelines",
+      "Microservices",
+      "Kafka",
       "REST APIs",
       "Platform Users",
     ],

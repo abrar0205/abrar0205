@@ -7,8 +7,8 @@ export function Experience() {
   return (
     <section id="experience" className="section-pad">
       <SectionHeading
-        eyebrow="Experience Highlights"
-        title="Production systems I've helped build"
+        eyebrow="Experience"
+        title="Professional Engineering Work"
         description="Professional work is summarized at a high level and anonymized to respect confidentiality. Each card reflects the engineering scope and architecture I contributed to."
       />
 

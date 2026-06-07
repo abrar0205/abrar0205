@@ -8,7 +8,7 @@ export function Projects() {
     <section id="projects" className="section-pad">
       <SectionHeading
         eyebrow="Projects"
-        title="Public, hands-on engineering work"
+        title="Public Project Portfolio"
         description="Open-source projects across applied ML, medical imaging, biomedical signal processing, and cloud data systems. Every card links to its repository."
       />
 

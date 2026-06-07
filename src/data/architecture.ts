@@ -69,8 +69,8 @@ export interface ArchitectureLayer {
 export const cloudProposal = {
   title: "Cloud Architecture Proposal — Energy Market Intelligence",
   note: "Architecture proposal for commodity contract price visualization using an AWS serverless-style design.",
-  drawioUrl:
-    "https://github.com/abrar0205/market-price-visualizer/blob/main/energy_market_architecture.drawio",
+  caseStudyUrl:
+    "https://github.com/abrar0205/market-price-visualizer/tree/main#energy-market-dashboard",
   repoUrl: "https://github.com/abrar0205/market-price-visualizer",
   layers: [
     {

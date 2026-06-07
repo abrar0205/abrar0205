@@ -14,7 +14,8 @@ export function About() {
     <section id="about" className="section-pad">
       <SectionHeading
         eyebrow="About"
-        title="Builder at the intersection of AI, backend, and cloud"
+        title="Engineering Profile"
+        description="Builder at the intersection of generative AI, backend platforms, and cloud delivery."
       />
 
       <div className="mt-10 grid gap-10 lg:grid-cols-[1.5fr_1fr]">

@@ -5,9 +5,18 @@ export const profile = {
   location: "Germany",
   headline: "Abrar Assan Mohamed",
   subheadline:
-    "Generative AI · LLM Workflow Automation · Backend Engineering · Cloud Deployment",
+    "Generative AI · Backend Platforms · Cloud-Deployed ML Workflows",
   intro:
     "I build AI-powered workflow tools that turn complex business and technical processes into structured, reliable software systems.",
+  // Compact credibility strip shown directly under the hero statement.
+  credibility: [
+    "GenAI Platform",
+    "5 LLM Workflows",
+    "17 AI Agents",
+    "AWS Deployment",
+    "Connected Vehicle Backend",
+    "Public ML Projects",
+  ],
   links: {
     github: "https://github.com/abrar0205",
     linkedin: "https://linkedin.com/in/abrar-a-m",

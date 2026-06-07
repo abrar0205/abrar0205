@@ -91,8 +91,26 @@ export function Hero() {
           {profile.intro}
         </motion.p>
 
+        {/* Compact credibility strip */}
         <motion.div
           custom={5}
+          initial="hidden"
+          animate="show"
+          variants={fade}
+          className="mt-7 flex flex-wrap items-center gap-x-2.5 gap-y-2"
+        >
+          {profile.credibility.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-accent/20 bg-accent/[0.08] px-3 py-1 text-xs font-medium text-accent-soft"
+            >
+              {item}
+            </span>
+          ))}
+        </motion.div>
+
+        <motion.div
+          custom={6}
           initial="hidden"
           animate="show"
           variants={fade}
@@ -129,7 +147,7 @@ export function Hero() {
 
         {/* Four-second value props */}
         <motion.div
-          custom={6}
+          custom={7}
           initial="hidden"
           animate="show"
           variants={fade}
@@ -146,7 +164,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          custom={7}
+          custom={8}
           initial="hidden"
           animate="show"
           variants={fade}
