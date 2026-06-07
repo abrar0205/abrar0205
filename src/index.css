@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-ink-950 text-slate-300 font-sans antialiased;
+    background-image:
+      radial-gradient(60rem 60rem at 80% -10%, rgba(91, 140, 255, 0.12), transparent 60%),
+      radial-gradient(50rem 50rem at -10% 20%, rgba(61, 215, 208, 0.08), transparent 55%),
+      radial-gradient(50rem 50rem at 50% 120%, rgba(155, 140, 255, 0.1), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+
+  /* Subtle, premium scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #06070b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #232838;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2f3650;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply rounded-2xl border border-white/10 bg-white/[0.035] backdrop-blur-xl;
+  }
+
+  .glass-hover {
+    @apply transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06]
+      hover:-translate-y-1 hover:shadow-2xl hover:shadow-accent/10;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-cyan via-accent-soft to-accent-violet bg-clip-text text-transparent;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border border-white/10 bg-white/5
+      px-3 py-1 text-xs font-medium text-slate-300;
+  }
+
+  .section-pad {
+    @apply mx-auto w-full max-w-content px-5 py-20 sm:px-8 md:py-28;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5
+      text-sm font-semibold transition-all duration-200 focus:outline-none
+      focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2
+      focus-visible:ring-offset-ink-950;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-accent to-accent-violet text-white
+      shadow-lg shadow-accent/20 hover:shadow-accent/40 hover:brightness-110;
+  }
+
+  .btn-ghost {
+    @apply btn border border-white/15 bg-white/5 text-slate-200
+      hover:border-white/30 hover:bg-white/10;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
