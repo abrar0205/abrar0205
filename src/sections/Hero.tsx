@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { profile } from "../data/profile";
+import { CTAButton } from "../components/CTAButton";
 import {
   ArrowRightIcon,
-  DownloadIcon,
   GitHubIcon,
-  MailIcon,
+  LinkedInIcon,
   MapPinIcon,
 } from "../components/icons";
 
@@ -42,7 +42,7 @@ export function Hero() {
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs text-slate-400"
+          className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs text-slate-300"
         >
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-cyan opacity-75" />
@@ -76,7 +76,7 @@ export function Hero() {
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mt-6 max-w-2xl text-xl font-medium leading-snug text-slate-200 sm:text-2xl"
+          className="mt-6 max-w-3xl text-lg font-semibold leading-snug text-slate-100 sm:text-xl"
         >
           {profile.subheadline}
         </motion.p>
@@ -86,7 +86,7 @@ export function Hero() {
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mt-5 max-w-2xl text-base leading-relaxed text-slate-400"
+          className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300"
         >
           {profile.intro}
         </motion.p>
@@ -96,40 +96,63 @@ export function Hero() {
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mt-9 flex flex-wrap gap-3"
+          className="mt-8 flex flex-wrap gap-3"
         >
-          <a href="#projects" className="btn-primary">
-            View Projects <ArrowRightIcon className="h-4 w-4" />
-          </a>
-          <a
+          <CTAButton
+            href="#projects"
+            variant="primary"
+            iconRight={<ArrowRightIcon className="h-4 w-4" />}
+          >
+            View Projects
+          </CTAButton>
+          <CTAButton
+            href="#system-design"
+            iconRight={<ArrowRightIcon className="h-4 w-4" />}
+          >
+            View System Design
+          </CTAButton>
+          <CTAButton
             href={profile.links.github}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="btn-ghost"
+            external
+            icon={<GitHubIcon className="h-4 w-4" />}
           >
-            <GitHubIcon className="h-4 w-4" /> View GitHub
-          </a>
-          <a href="#contact" className="btn-ghost">
-            <MailIcon className="h-4 w-4" /> Contact Me
-          </a>
-          <a
-            href={profile.portfolioPdfPath}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="btn-ghost"
+            GitHub
+          </CTAButton>
+          <CTAButton
+            href={profile.links.linkedin}
+            external
+            icon={<LinkedInIcon className="h-4 w-4" />}
           >
-            <DownloadIcon className="h-4 w-4" /> Portfolio PDF
-          </a>
+            LinkedIn
+          </CTAButton>
         </motion.div>
 
+        {/* Four-second value props */}
         <motion.div
           custom={6}
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mt-12 border-t border-white/5 pt-6"
+          className="mt-10 grid max-w-4xl grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4"
         >
-          <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-slate-600">
+          {profile.valueProps.map((vp) => (
+            <div key={vp.title} className="glass p-4">
+              <p className="text-sm font-semibold text-white">{vp.title}</p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-400">
+                {vp.detail}
+              </p>
+            </div>
+          ))}
+        </motion.div>
+
+        <motion.div
+          custom={7}
+          initial="hidden"
+          animate="show"
+          variants={fade}
+          className="mt-10 border-t border-white/5 pt-6"
+        >
+          <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-slate-500">
             Core toolkit
           </p>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-sm text-slate-400">

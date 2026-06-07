@@ -10,13 +10,28 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
       </span>
 
       <h3 className="text-2xl font-bold text-white">{experience.title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-slate-400">
+      <p className="mt-3 text-[15px] leading-relaxed text-slate-200">
         {experience.description}
       </p>
 
-      <ul className="mt-6 space-y-3">
+      {/* Quick-scan highlight chips */}
+      <div className="mt-5 flex flex-wrap gap-1.5">
+        {experience.highlights.map((h) => (
+          <span
+            key={h}
+            className="rounded-lg border border-accent-cyan/20 bg-accent-cyan/[0.07] px-2.5 py-1 text-xs font-medium text-accent-cyan"
+          >
+            {h}
+          </span>
+        ))}
+      </div>
+
+      <ul className="mt-6 space-y-2.5">
         {experience.bullets.map((bullet) => (
-          <li key={bullet} className="flex gap-3 text-sm leading-relaxed text-slate-300">
+          <li
+            key={bullet}
+            className="flex gap-3 text-sm leading-relaxed text-slate-300"
+          >
             <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-accent-cyan" />
             <span>{bullet}</span>
           </li>

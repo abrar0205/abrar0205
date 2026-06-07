@@ -1,5 +1,6 @@
 import { profile } from "../data/profile";
 import { Reveal } from "../components/Reveal";
+import { CTAButton } from "../components/CTAButton";
 import { GitHubIcon, LinkedInIcon, MailIcon } from "../components/icons";
 
 export function Contact() {
@@ -13,32 +14,34 @@ export function Contact() {
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Let's build something reliable
           </h2>
-          <p className="mt-5 text-base leading-relaxed text-slate-400">
+          <p className="mt-5 text-base leading-relaxed text-slate-300">
             I'm open to internships and working student roles in Generative AI,
             ML Engineering, AI workflow automation, backend engineering, cloud
             platforms, and applied data science.
           </p>
 
           <div className="mt-9 flex flex-wrap justify-center gap-3">
-            <a href={`mailto:${profile.links.email}`} className="btn-primary">
-              <MailIcon className="h-4 w-4" /> Email Me
-            </a>
-            <a
+            <CTAButton
+              href={`mailto:${profile.links.email}`}
+              variant="primary"
+              icon={<MailIcon className="h-4 w-4" />}
+            >
+              Email
+            </CTAButton>
+            <CTAButton
               href={profile.links.linkedin}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="btn-ghost"
+              external
+              icon={<LinkedInIcon className="h-4 w-4" />}
             >
-              <LinkedInIcon className="h-4 w-4" /> LinkedIn
-            </a>
-            <a
+              LinkedIn
+            </CTAButton>
+            <CTAButton
               href={profile.links.github}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="btn-ghost"
+              external
+              icon={<GitHubIcon className="h-4 w-4" />}
             >
-              <GitHubIcon className="h-4 w-4" /> GitHub
-            </a>
+              GitHub
+            </CTAButton>
           </div>
         </div>
       </Reveal>

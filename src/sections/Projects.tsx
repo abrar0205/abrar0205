@@ -7,14 +7,18 @@ export function Projects() {
   return (
     <section id="projects" className="section-pad">
       <SectionHeading
-        eyebrow="Project Portfolio"
+        eyebrow="Projects"
         title="Public, hands-on engineering work"
-        description="Open-source projects spanning applied machine learning, medical imaging, biomedical signal processing, and data systems. Every card links to its repository."
+        description="Open-source projects across applied ML, medical imaging, biomedical signal processing, and cloud data systems. Every card links to its repository."
       />
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, i) => (
-          <Reveal key={project.title} delay={(i % 3) * 0.06} className="h-full">
+          <Reveal
+            key={project.title}
+            delay={(i % 3) * 0.06}
+            className={`h-full ${project.featured ? "sm:col-span-2" : ""}`}
+          >
             <ProjectCard project={project} />
           </Reveal>
         ))}

@@ -2,6 +2,7 @@ export interface Experience {
   title: string;
   label: string;
   description: string;
+  highlights: string[];
   bullets: string[];
   flowTitle: string;
   flow: string[];
@@ -14,14 +15,21 @@ export const experiences: Experience[] = [
     title: "AI Workflow Automation Platform",
     label: "Professional Project · Anonymized · Siemens Energy",
     description:
-      "Built backend and workflow components for an internal GenAI platform supporting document-heavy engineering and business workflows.",
+      "Built backend and workflow components for an internal GenAI platform supporting document-heavy business workflows.",
+    highlights: [
+      "5 LLM workflows",
+      "17 CrewAI agents",
+      "RAG + ChromaDB",
+      "FastAPI backend",
+      "React / Next.js",
+      "Docker + AWS + Terraform",
+    ],
     bullets: [
-      "Developed FastAPI services for document ingestion, information extraction, semantic search, content generation, workflow synchronization, and health monitoring.",
-      "Owned LLM workflow orchestration across 5 major workflows connecting document ingestion, RAG, structured output creation, DOCX generation, and real-time backend status notifications.",
-      "Implemented CrewAI-based multi-agent execution with 17 specialized agents for technical analysis, commercial content generation, pricing support, validation, risk assessment, and structured proposal creation.",
-      "Built configurable prompt pipelines and dynamic agent-persona components.",
-      "Integrated ChromaDB, embeddings, vector search, RabbitMQ messaging, async jobs, pytest validation, and AWS deployment workflows.",
-      "Supported full-stack delivery with TypeScript, React, Next.js, Docker, AWS CodeBuild, ECR, ECS, S3, Terraform, and GitHub-triggered workflows.",
+      "Developed FastAPI services for document ingestion, extraction, semantic search, content generation, and health monitoring.",
+      "Owned LLM workflow orchestration across 5 workflows linking ingestion, RAG, structured output, DOCX generation, and real-time status notifications.",
+      "Implemented CrewAI multi-agent execution with 17 specialized agents for analysis, content generation, pricing support, validation, and risk assessment.",
+      "Integrated ChromaDB, embeddings, vector search, RabbitMQ messaging, async jobs, and pytest validation.",
+      "Supported full-stack delivery with TypeScript, React, Next.js, Docker, AWS (CodeBuild, ECR, ECS, S3), and Terraform.",
     ],
     flowTitle: "Architecture flow",
     flow: [
@@ -31,7 +39,7 @@ export const experiences: Experience[] = [
       "RAG",
       "CrewAI Agents",
       "Structured Output",
-      "UI Tracking",
+      "UI Status Tracking",
       "Cloud Deployment",
     ],
     stack: [
@@ -41,16 +49,11 @@ export const experiences: Experience[] = [
       "RAG",
       "ChromaDB",
       "RabbitMQ",
-      "PyMuPDF",
-      "Unstructured",
       "TypeScript",
       "React",
       "Next.js",
       "Docker",
-      "AWS ECS",
-      "ECR",
-      "CodeBuild",
-      "S3",
+      "AWS",
       "Terraform",
     ],
   },
@@ -59,13 +62,21 @@ export const experiences: Experience[] = [
     label: "Professional Project · Automotive Backend · TATA ELXSI / TATA Motors",
     description:
       "Built backend components for a connected-vehicle platform handling telemetry, device-state synchronization, and distributed data flow.",
+    highlights: [
+      "Python microservices",
+      "AWS IoT Core",
+      "MQTT",
+      "Kafka",
+      "REST APIs",
+      "JMeter / SonarQube",
+      "15–20% throughput",
+    ],
     bullets: [
-      "Developed Python microservices for vehicle onboarding, telemetry ingestion, device-state handling, and backend integration.",
-      "Implemented AWS IoT Core and MQTT workflows for vehicle-to-cloud messaging and near real-time telemetry exchange.",
+      "Developed Python microservices for vehicle onboarding, telemetry ingestion, and device-state handling.",
+      "Implemented AWS IoT Core and MQTT workflows for vehicle-to-cloud messaging and near real-time telemetry.",
       "Managed device shadow interactions to synchronize cloud-side vehicle states with connected assets.",
-      "Designed REST APIs for device registration, telemetry access, status retrieval, and backend integration.",
-      "Built Kafka-based streaming workflows and data transformation pipelines for high-volume sensor and event data.",
-      "Supported release readiness through JMeter API testing, unit testing, debugging, SonarQube checks, and validation.",
+      "Designed REST APIs for device registration, telemetry access, and status retrieval.",
+      "Built Kafka-based streaming workflows and supported release readiness with JMeter, unit testing, and SonarQube.",
     ],
     impact: "Improved streaming throughput by 15–20%.",
     flowTitle: "Data flow",
@@ -75,7 +86,7 @@ export const experiences: Experience[] = [
       "Python Microservices",
       "Kafka Pipelines",
       "REST APIs",
-      "Platform Users / Monitoring",
+      "Platform Users",
     ],
     stack: [
       "Python",

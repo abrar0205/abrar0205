@@ -54,9 +54,7 @@ Live site: **https://abrar0205.github.io/abrar0205/**
 ├── tailwind.config.js         # theme tokens (colors, fonts, animations)
 ├── public/                    # static assets served as-is
 │   ├── favicon.svg
-│   ├── .nojekyll              # tells Pages not to run Jekyll
-│   ├── Abrar_Assan_Mohamed_Resume.pdf   # placeholder — replace
-│   └── Abrar_Tesla_Portfolio.pdf        # placeholder — replace
+│   └── .nojekyll              # tells Pages not to run Jekyll
 ├── src/
 │   ├── main.tsx               # app entry
 │   ├── App.tsx                # section composition
@@ -66,14 +64,14 @@ Live site: **https://abrar0205.github.io/abrar0205/**
 │   │   ├── experience.ts
 │   │   ├── projects.ts
 │   │   ├── skills.ts
-│   │   └── systemDesign.ts
+│   │   └── architecture.ts
 │   ├── components/            # reusable building blocks
-│   │   ├── Navbar.tsx  Footer.tsx  Reveal.tsx  SectionHeading.tsx
-│   │   ├── ExperienceCard.tsx  ProjectCard.tsx  SkillsGrid.tsx
-│   │   ├── ArchitectureFlow.tsx  icons.tsx
+│   │   ├── Navbar.tsx  Footer.tsx  Reveal.tsx  SectionHeading.tsx  CTAButton.tsx
+│   │   ├── ExperienceCard.tsx  ProjectCard.tsx  SkillsGrid.tsx  SkillGroup.tsx
+│   │   ├── ArchitectureFlow.tsx  LayeredArchitecture.tsx  icons.tsx
 │   └── sections/             # page sections
 │       ├── Hero.tsx  About.tsx  Experience.tsx  Projects.tsx
-│       ├── Skills.tsx  SystemDesign.tsx  Downloads.tsx  Contact.tsx
+│       ├── SystemDesign.tsx  Skills.tsx  Contact.tsx
 └── .github/workflows/deploy.yml   # CI build + Pages deploy
 ```
 
@@ -88,14 +86,8 @@ npm run preview  # preview the production build locally
 
 ### Editing content
 
-All content lives in typed files under `src/data/` — update text, projects, and
-skills there without touching components.
-
-To replace the placeholder PDFs, drop the real files into `public/` using the
-exact same filenames:
-
-- `public/Abrar_Assan_Mohamed_Resume.pdf`
-- `public/Abrar_Tesla_Portfolio.pdf`
+All content lives in typed files under `src/data/` — update text, projects,
+skills, experience, and architecture there without touching components.
 
 ### Deploy to GitHub Pages
 

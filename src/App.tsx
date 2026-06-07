@@ -4,9 +4,8 @@ import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
 import { Experience } from "./sections/Experience";
 import { Projects } from "./sections/Projects";
-import { Skills } from "./sections/Skills";
 import { SystemDesign } from "./sections/SystemDesign";
-import { Downloads } from "./sections/Downloads";
+import { Skills } from "./sections/Skills";
 import { Contact } from "./sections/Contact";
 
 export default function App() {
@@ -18,9 +17,8 @@ export default function App() {
         <About />
         <Experience />
         <Projects />
-        <Skills />
         <SystemDesign />
-        <Downloads />
+        <Skills />
         <Contact />
       </main>
       <Footer />

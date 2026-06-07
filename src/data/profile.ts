@@ -5,7 +5,7 @@ export const profile = {
   location: "Germany",
   headline: "Abrar Assan Mohamed",
   subheadline:
-    "Building practical Generative AI systems, backend platforms, and cloud-deployed ML workflows.",
+    "Generative AI · LLM Workflow Automation · Backend Engineering · Cloud Deployment",
   intro:
     "I build AI-powered workflow tools that turn complex business and technical processes into structured, reliable software systems.",
   links: {
@@ -13,8 +13,6 @@ export const profile = {
     linkedin: "https://linkedin.com/in/abrar-a-m",
     email: "abraram.cnr@gmail.com",
   },
-  resumePath: "/abrar0205/Abrar_Assan_Mohamed_Resume.pdf",
-  portfolioPdfPath: "/abrar0205/Abrar_Tesla_Portfolio.pdf",
   techStrip: [
     "Python",
     "FastAPI",
@@ -26,6 +24,25 @@ export const profile = {
     "TypeScript",
     "React",
     "PyTorch",
+  ],
+  // Four-second value props shown on the first screen.
+  valueProps: [
+    {
+      title: "Generative AI systems",
+      detail: "LLM workflows, RAG, and multi-agent orchestration in production.",
+    },
+    {
+      title: "Backend & cloud delivery",
+      detail: "FastAPI services shipped on Docker, AWS, and Terraform.",
+    },
+    {
+      title: "Public ML projects",
+      detail: "Multimodal time-series ML with rigorous evaluation.",
+    },
+    {
+      title: "Automotive / IoT backend",
+      detail: "Telemetry, MQTT, and Kafka pipelines at vehicle scale.",
+    },
   ],
   about: [
     "I am a Master's student in Medical Engineering — Medical Image and Data Processing at Friedrich-Alexander-Universität Erlangen-Nürnberg, with professional experience in Generative AI workflow automation, backend engineering, cloud deployment, connected-vehicle platforms, and Python-based data processing.",
