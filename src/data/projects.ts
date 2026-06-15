@@ -12,6 +12,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Enterprise Knowledge Intelligence Platform",
+    github: "https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform",
+    type: "Enterprise Platform",
+    impact: "Secure Enterprise RAG",
+    featured: true,
+    description:
+      "Production-grade Enterprise Knowledge Intelligence Platform featuring LangGraph-based Agentic RAG, hybrid retrieval, cross-encoder reranking, local and cloud LLM support, RBAC, audit logging, evaluation pipelines, explainable citations, observability, and multi-source knowledge ingestion across enterprise data ecosystems.",
+    highlights: [
+      "Secure RAG with strict RBAC",
+      "Hybrid retrieval (dense vectors + BM25)",
+      "Extractive grounding + cite-or-refuse",
+      "Citations + confidence",
+    ],
+    stack: ["Python", "FastAPI", "ChromaDB", "LLMs"],
+    whyItMatters:
+      "A production-oriented secure Retrieval-Augmented Generation platform answering queries while enforcing strict role-based access control.",
+  },
+  {
     title: "Lower-Limb Prosthetic Control ML",
     github: "https://github.com/abrar0205/lower-limb-prosthetic-control-ml",
     type: "Public ML Project",
