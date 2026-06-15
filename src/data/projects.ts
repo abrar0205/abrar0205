@@ -12,107 +12,78 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Enterprise Knowledge Intelligence Platform",
+    title: "Enterprise Knowledge Intelligence",
     github: "https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform",
-    type: "Enterprise Platform",
-    impact: "Secure Enterprise RAG",
+    type: "Platform",
+    impact: "Secure RAG Ecosystem",
     featured: true,
-    description:
-      "Production-grade Enterprise Knowledge Intelligence Platform featuring LangGraph-based Agentic RAG, hybrid retrieval, cross-encoder reranking, local and cloud LLM support, RBAC, audit logging, evaluation pipelines, explainable citations, observability, and multi-source knowledge ingestion across enterprise data ecosystems.",
+    description: "Production-grade agentic RAG platform integrating enterprise data sources with robust RBAC, cross-encoder reranking, and hybrid retrieval capabilities.",
     highlights: [
-      "Secure RAG with strict RBAC",
-      "Hybrid retrieval (dense vectors + BM25)",
-      "Extractive grounding + cite-or-refuse",
-      "Citations + confidence",
+      "Role-Based Access Control enforcing strict data governance.",
+      "Hybrid dense + BM25 retrieval for precision querying.",
+      "Explainable outputs with verifiable citations."
     ],
-    stack: ["Python", "FastAPI", "ChromaDB", "LLMs"],
-    whyItMatters:
-      "A production-oriented secure Retrieval-Augmented Generation platform answering queries while enforcing strict role-based access control.",
+    stack: ["Python", "FastAPI", "ChromaDB", "LangGraph"],
   },
   {
-    title: "Lower-Limb Prosthetic Control ML",
+    title: "Prosthetic Control ML",
     github: "https://github.com/abrar0205/lower-limb-prosthetic-control-ml",
-    type: "Public ML Project",
-    impact: "End-to-end ML pipeline",
+    type: "Applied ML",
+    impact: "Multimodal Fusion",
     featured: true,
-    description:
-      "End-to-end ML workflow for multimodal EMG and IMU time-series focused on movement prediction, gait segmentation, and user-intent recognition.",
+    description: "End-to-end machine learning pipeline predicting intent and movement from EMG and IMU time-series sensor data.",
     highlights: [
-      "Synthetic EMG/IMU data generation and sliding-window preprocessing",
-      "Feature extraction with a Random Forest baseline",
-      "PyTorch sequence models for temporal prediction",
-      "EMG-only, IMU-only, and multimodal fusion comparison",
-      "Evaluation: accuracy, macro F1, NRMSD, temporal consistency, noise robustness",
+      "Multimodal sensor fusion combining EMG and IMU streams.",
+      "PyTorch-based sequence modeling and rigorous temporal evaluation.",
     ],
-    stack: ["Python", "PyTorch", "scikit-learn", "NumPy", "Pandas"],
-    whyItMatters:
-      "The closest public proxy to applied ML work — a complete, evaluation-driven pipeline on real multimodal sensor data.",
+    stack: ["PyTorch", "Python", "Scikit-Learn"],
   },
   {
-    title: "MRI Pulse Sequence Simulation Lab",
+    title: "MRI Pulse Sequence Lab",
     github: "https://github.com/abrar0205/MRI",
     type: "Medical Imaging",
-    impact: "Signal & reconstruction",
-    description:
-      "Python project for MRI sequence concepts, signal modelling, k-space encoding, undersampling, and reconstruction.",
+    impact: "Signal Reconstruction",
+    description: "Simulation tool for analyzing MRI sequences, tracking signal modeling, k-space encoding, and image reconstruction.",
     highlights: [
-      "GRE / FLASH, Spin Echo, RARE, and bSSFP signal concepts",
-      "Magnetization contrast modelling",
-      "Centered FFT / inverse FFT k-space utilities",
-      "Cartesian and radial-style sampling masks",
-      "Zero-filled reconstruction and error metrics",
+      "Centered FFT and advanced k-space utilities.",
+      "Cartesian and radial sampling methodologies.",
     ],
-    stack: ["Python", "NumPy", "FFT", "Signal Modelling"],
-    whyItMatters:
-      "Signal-level understanding of acquisition and reconstruction, not just model usage.",
+    stack: ["Python", "NumPy", "FFT"],
   },
   {
     title: "Neuromuscular Fatigue Analysis",
     github: "https://github.com/abrar0205/neuromuscular-fatigue-analysis",
-    type: "Biomedical Signal Processing",
-    impact: "Experimental analysis",
-    description:
-      "Time-series analysis of HD-sEMG and force-sensor data from neuromuscular fatigue experiments.",
+    type: "Signal Processing",
+    impact: "Data Insights",
+    description: "Advanced time-series analysis of high-density sEMG and force sensor data to detect neuromuscular fatigue markers.",
     highlights: [
-      "EMG and force-sensor preprocessing",
-      "RMS and FFT-based spectral analysis",
-      "Fatigue-related feature extraction",
-      "Subject-level variability analysis",
+      "Spectral analysis leveraging RMS and FFT.",
+      "Extraction of complex fatigue-related features from raw signals.",
     ],
-    stack: ["Python", "NumPy", "SciPy", "FFT"],
-    whyItMatters:
-      "Working with messy, real experimental signals and reasoning about variability.",
+    stack: ["SciPy", "Python", "NumPy"],
   },
   {
     title: "Energy Market Intelligence",
     github: "https://github.com/abrar0205/energymarket",
-    type: "Architecture / Demo",
-    impact: "Cloud system design",
-    description:
-      "System design and demo project for structuring, processing, and presenting energy-market data.",
+    type: "System Design",
+    impact: "Cloud Data Pipelines",
+    description: "Cloud-native architecture designed to process, model, and serve real-time energy market analytics.",
     highlights: [
-      "Cloud architecture design",
-      "Backend processing and data-flow modelling",
-      "User-facing analytics output",
+      "Scalable backend design mapping data flows.",
+      "End-to-end AWS integration for high availability.",
     ],
-    stack: ["System Design", "AWS", "Data Pipelines", "APIs"],
-    whyItMatters:
-      "Demonstrates cloud and data-flow system thinking end to end.",
+    stack: ["AWS", "Architecture", "Data Pipelines"],
   },
   {
     title: "Market Price Visualizer",
     github: "https://github.com/abrar0205/market-price-visualizer",
     type: "Data Visualization",
-    impact: "Insight delivery",
-    description:
-      "Data visualization project for exploring market price behavior and presenting trends clearly.",
+    impact: "Insight Delivery",
+    description: "Interactive dashboard surfacing complex market price trends into actionable visual intelligence.",
     highlights: [
-      "Interactive price exploration",
-      "Trend presentation",
-      "Readable, user-facing charts",
+      "Intuitive exploration of large datasets.",
+      "Clear presentation of actionable trends.",
     ],
-    stack: ["Python", "Pandas", "Data Visualization"],
-    whyItMatters:
-      "Turns raw market data into readable, decision-ready insight.",
+    stack: ["Python", "Pandas"],
   },
 ];

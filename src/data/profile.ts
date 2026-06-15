@@ -1,62 +1,35 @@
 export const profile = {
   name: "Abrar Assan Mohamed",
-  positioning:
-    "Generative AI · LLM Workflow Automation · Backend Engineering · Cloud Deployment · Applied ML",
+  positioning: "Software Engineer · AI/ML & Backend",
   location: "Germany",
-  headline: "Abrar Assan Mohamed",
-  subheadline:
-    "Generative AI · Backend Platforms · Cloud-Deployed ML Workflows",
+  headline: "Architecting Intelligent Systems.",
+  subheadline: "AI Engineer & Backend Specialist.",
   intro:
-    "I build AI-powered workflow tools that turn complex business and technical processes into structured, reliable software systems.",
-  // Compact credibility strip shown directly under the hero statement.
+    "I design and deploy scalable backend architectures and AI-driven platforms that solve complex enterprise challenges.",
   credibility: [
-    "GenAI Platform",
-    "5 LLM Workflows",
-    "17 AI Agents",
-    "AWS Deployment",
-    "Connected Vehicle Backend",
-    "Public ML Projects",
+    "Enterprise GenAI",
+    "Production ML",
+    "AWS Architect",
+    "Connected Vehicles",
   ],
   links: {
     github: "https://github.com/abrar0205",
     linkedin: "https://linkedin.com/in/abrar-a-m",
     email: "abraram.cnr@gmail.com",
   },
-  techStrip: [
-    "Python",
-    "FastAPI",
-    "LLM Workflows",
-    "RAG",
-    "CrewAI",
-    "AWS",
-    "Docker",
-    "TypeScript",
-    "React",
-    "PyTorch",
-  ],
-  // Four-second value props shown on the first screen.
   valueProps: [
     {
-      title: "Generative AI systems",
-      detail: "LLM workflows, RAG, and multi-agent orchestration in production.",
+      title: "AI & ML Integration",
+      detail: "Building and orchestrating RAG, LLM agents, and robust ML pipelines.",
     },
     {
-      title: "Backend & cloud delivery",
-      detail: "FastAPI services shipped on Docker, AWS, and Terraform.",
-    },
-    {
-      title: "Public ML projects",
-      detail: "Multimodal time-series ML with rigorous evaluation.",
-    },
-    {
-      title: "Automotive / IoT backend",
-      detail: "Telemetry, MQTT, and Kafka pipelines at vehicle scale.",
+      title: "Backend & Cloud",
+      detail: "Shipping high-performance microservices on AWS and Docker.",
     },
   ],
   about: [
-    "I am a Master's student in Medical Engineering — Medical Image and Data Processing at Friedrich-Alexander-Universität Erlangen-Nürnberg, with professional experience in Generative AI workflow automation, backend engineering, cloud deployment, connected-vehicle platforms, and Python-based data processing.",
-    "Currently, I work as an IT & Digital Platforms Engineer at Siemens Energy, contributing to internal GenAI workflow systems involving FastAPI services, LLM orchestration, document intelligence, semantic retrieval, agentic workflows, async processing, frontend/API integration, and AWS-based deployment.",
-    "Previously, I worked at TATA ELXSI on connected-vehicle and IoT backend platforms for TATA Motors, building Python microservices, REST APIs, AWS IoT Core/MQTT communication, Kafka streaming workflows, telemetry pipelines, and validation workflows.",
+    "I specialize in bridging the gap between cutting-edge AI and production-ready software. With an M.Sc. in Medical Engineering and professional experience at Siemens Energy and TATA Motors, I engineer robust backend systems, agentic workflows, and cloud infrastructures.",
+    "My focus is on transforming complex business requirements into elegant, automated, and secure technical solutions.",
   ],
 };
 

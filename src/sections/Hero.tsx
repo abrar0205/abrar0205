@@ -23,7 +23,6 @@ export function Hero() {
       id="top"
       className="relative flex min-h-screen items-center overflow-hidden"
     >
-      {/* Decorative grid + glow */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.5]"
@@ -48,7 +47,7 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-cyan opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-cyan" />
           </span>
-          Open to AI / ML &amp; backend engineering roles
+          {profile.positioning}
         </motion.div>
 
         <motion.p
@@ -91,7 +90,6 @@ export function Hero() {
           {profile.intro}
         </motion.p>
 
-        {/* Compact credibility strip */}
         <motion.div
           custom={5}
           initial="hidden"
@@ -124,10 +122,10 @@ export function Hero() {
             View Projects
           </CTAButton>
           <CTAButton
-            href="#system-design"
+            href="#skills"
             iconRight={<ArrowRightIcon className="h-4 w-4" />}
           >
-            View System Design
+            View Skills
           </CTAButton>
           <CTAButton
             href={profile.links.github}
@@ -145,44 +143,21 @@ export function Hero() {
           </CTAButton>
         </motion.div>
 
-        {/* Four-second value props */}
         <motion.div
           custom={7}
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mt-10 grid max-w-4xl grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-12 grid max-w-4xl grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-2"
         >
           {profile.valueProps.map((vp) => (
-            <div key={vp.title} className="glass p-4">
-              <p className="text-sm font-semibold text-white">{vp.title}</p>
-              <p className="mt-1 text-xs leading-relaxed text-slate-400">
+            <div key={vp.title} className="glass p-5 border-l-2 border-accent-cyan">
+              <p className="text-base font-bold text-white tracking-wide">{vp.title}</p>
+              <p className="mt-2 text-sm leading-relaxed text-slate-400">
                 {vp.detail}
               </p>
             </div>
           ))}
-        </motion.div>
-
-        <motion.div
-          custom={8}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="mt-10 border-t border-white/5 pt-6"
-        >
-          <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-slate-500">
-            Core toolkit
-          </p>
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-sm text-slate-400">
-            {profile.techStrip.map((tech, i) => (
-              <span key={tech} className="flex items-center gap-x-3">
-                {i > 0 && <span className="text-slate-700">·</span>}
-                <span className="transition-colors hover:text-accent-soft">
-                  {tech}
-                </span>
-              </span>
-            ))}
-          </div>
         </motion.div>
       </div>
     </section>
