@@ -15,9 +15,9 @@ export function Contact() {
             Let's Connect
           </h2>
           <p className="mt-5 text-base leading-relaxed text-slate-300">
-            I'm open to internships and working student roles in Generative AI,
-            ML Engineering, AI workflow automation, backend engineering, cloud
-            platforms, and applied data science.
+            I'm looking for internships and working-student roles in GenAI and ML
+            engineering, backend, and cloud. If that's what you're hiring for,
+            I'd be glad to talk.
           </p>
 
           <div className="mt-9 flex flex-wrap justify-center gap-3">

@@ -9,7 +9,7 @@ export function Projects() {
       <SectionHeading
         eyebrow="Projects"
         title="Public Project Portfolio"
-        description="Open-source projects across applied ML, medical imaging, biomedical signal processing, and cloud data systems. Every card links to its repository."
+        description="A GenAI platform plus public work across applied ML, medical imaging, signal processing, and cloud data systems. Every card links to its repo."
       />
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

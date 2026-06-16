@@ -3,10 +3,10 @@ import { Reveal } from "../components/Reveal";
 import { SectionHeading } from "../components/SectionHeading";
 
 const facts = [
-  { value: "GenAI", label: "Workflow automation focus" },
-  { value: "2", label: "Industry engineering roles" },
-  { value: "Cloud", label: "AWS-based deployment" },
-  { value: "M.Sc.", label: "Medical Engineering, FAU" },
+  { value: "Siemens Energy", label: "GenAI platform engineering" },
+  { value: "TATA ELXSI", label: "Connected-vehicle backend" },
+  { value: "FAU", label: "M.Sc. Medical Engineering" },
+  { value: "AWS", label: "Docker · ECS · Terraform" },
 ];
 
 export function About() {
@@ -15,7 +15,7 @@ export function About() {
       <SectionHeading
         eyebrow="About"
         title="Engineering Profile"
-        description="Builder at the intersection of generative AI, backend platforms, and cloud delivery."
+        description="A research-focused Master's and two industry roles, spent mostly on AI and backend systems that have to run in production."
       />
 
       <div className="mt-10 grid gap-10 lg:grid-cols-[1.5fr_1fr]">

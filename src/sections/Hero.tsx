@@ -145,30 +145,12 @@ export function Hero() {
           </CTAButton>
         </motion.div>
 
-        {/* Four-second value props */}
         <motion.div
           custom={7}
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mt-10 grid max-w-4xl grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4"
-        >
-          {profile.valueProps.map((vp) => (
-            <div key={vp.title} className="glass p-4">
-              <p className="text-sm font-semibold text-white">{vp.title}</p>
-              <p className="mt-1 text-xs leading-relaxed text-slate-400">
-                {vp.detail}
-              </p>
-            </div>
-          ))}
-        </motion.div>
-
-        <motion.div
-          custom={8}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="mt-10 border-t border-white/5 pt-6"
+          className="mt-12 border-t border-white/5 pt-6"
         >
           <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-slate-500">
             Core toolkit
