@@ -9,7 +9,7 @@ export function Experience() {
       <SectionHeading
         eyebrow="Experience"
         title="Professional Engineering Work"
-        description="Professional work is summarized at a high level and anonymized to respect confidentiality. Each card reflects the engineering scope and architecture I contributed to."
+        description="Two industry roles, anonymized where confidentiality requires. The scope and architecture are real; internal specifics aren't shown."
       />
 
       <div className="mt-12 grid gap-6 lg:grid-cols-2">

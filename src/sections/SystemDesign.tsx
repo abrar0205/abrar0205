@@ -89,10 +89,10 @@ export function SystemDesign() {
               </p>
               <ul className="space-y-2.5">
                 {[
-                  "Cloud architecture and serverless application design",
-                  "Data ingestion across heterogeneous external sources",
-                  "Clear processing, API, and storage separation",
-                  "User-facing analytics backed by observability",
+                  "Serverless cloud architecture, designed end to end",
+                  "Ingesting data from several different external sources",
+                  "Clean separation between processing, API, and storage",
+                  "User-facing analytics, with monitoring underneath",
                 ].map((point) => (
                   <li
                     key={point}

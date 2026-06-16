@@ -18,25 +18,24 @@ export const projects: Project[] = [
     impact: "Secure Enterprise RAG",
     featured: true,
     description:
-      "Production-grade Enterprise Knowledge Intelligence Platform featuring LangGraph-based Agentic RAG, hybrid retrieval, cross-encoder reranking, local and cloud LLM support, RBAC, audit logging, evaluation pipelines, explainable citations, observability, and multi-source knowledge ingestion across enterprise data ecosystems.",
+      "A secure RAG assistant for enterprise knowledge. LangGraph agentic retrieval with hybrid search and cross-encoder reranking, answers grounded in cited sources, and role-based access enforced from query to response.",
     highlights: [
-      "Secure RAG with strict RBAC",
       "Hybrid retrieval (dense vectors + BM25)",
-      "Extractive grounding + cite-or-refuse",
-      "Citations + confidence",
+      "Cross-encoder reranking",
+      "Cite-or-refuse grounding with confidence",
+      "Role-based access + audit logging",
     ],
-    stack: ["Python", "FastAPI", "ChromaDB", "LLMs"],
+    stack: ["Python", "FastAPI", "LangGraph", "ChromaDB", "LLMs"],
     whyItMatters:
-      "A production-oriented secure Retrieval-Augmented Generation platform answering queries while enforcing strict role-based access control.",
+      "RAG is easy to demo and hard to make safe. This build is the version that takes access control and grounding seriously.",
   },
   {
     title: "Lower-Limb Prosthetic Control ML",
     github: "https://github.com/abrar0205/lower-limb-prosthetic-control-ml",
     type: "Public ML Project",
     impact: "End-to-end ML pipeline",
-    featured: true,
     description:
-      "End-to-end ML workflow for multimodal EMG and IMU time-series focused on movement prediction, gait segmentation, and user-intent recognition.",
+      "An end-to-end ML workflow on multimodal EMG and IMU time-series for movement prediction, gait segmentation, and user-intent recognition.",
     highlights: [
       "Synthetic EMG/IMU data generation and sliding-window preprocessing",
       "Feature extraction with a Random Forest baseline",
@@ -46,7 +45,7 @@ export const projects: Project[] = [
     ],
     stack: ["Python", "PyTorch", "scikit-learn", "NumPy", "Pandas"],
     whyItMatters:
-      "The closest public proxy to applied ML work — a complete, evaluation-driven pipeline on real multimodal sensor data.",
+      "My fullest public ML build — data prep, modelling, and an evaluation harness, not just a notebook.",
   },
   {
     title: "MRI Pulse Sequence Simulation Lab",
@@ -64,7 +63,7 @@ export const projects: Project[] = [
     ],
     stack: ["Python", "NumPy", "FFT", "Signal Modelling"],
     whyItMatters:
-      "Signal-level understanding of acquisition and reconstruction, not just model usage.",
+      "Built to understand MRI at the signal level — how acquisition and k-space actually become an image.",
   },
   {
     title: "Neuromuscular Fatigue Analysis",
@@ -81,7 +80,7 @@ export const projects: Project[] = [
     ],
     stack: ["Python", "NumPy", "SciPy", "FFT"],
     whyItMatters:
-      "Working with messy, real experimental signals and reasoning about variability.",
+      "Real lab signals, with all the noise and per-subject variability that comes with them.",
   },
   {
     title: "Energy Market Intelligence",
@@ -89,7 +88,7 @@ export const projects: Project[] = [
     type: "Architecture / Demo",
     impact: "Cloud system design",
     description:
-      "System design and demo project for structuring, processing, and presenting energy-market data.",
+      "A design-and-demo project for ingesting, processing, and presenting energy-market data.",
     highlights: [
       "Cloud architecture design",
       "Backend processing and data-flow modelling",
@@ -97,7 +96,7 @@ export const projects: Project[] = [
     ],
     stack: ["System Design", "AWS", "Data Pipelines", "APIs"],
     whyItMatters:
-      "Demonstrates cloud and data-flow system thinking end to end.",
+      "Where I work through the cloud and data-flow design before writing much code.",
   },
   {
     title: "Market Price Visualizer",
@@ -105,7 +104,7 @@ export const projects: Project[] = [
     type: "Data Visualization",
     impact: "Insight delivery",
     description:
-      "Data visualization project for exploring market price behavior and presenting trends clearly.",
+      "A focused visualization for exploring market-price movements and trends.",
     highlights: [
       "Interactive price exploration",
       "Trend presentation",
@@ -113,6 +112,6 @@ export const projects: Project[] = [
     ],
     stack: ["Python", "Pandas", "Data Visualization"],
     whyItMatters:
-      "Turns raw market data into readable, decision-ready insight.",
+      "A small, sharp build: make price movements easy to read at a glance.",
   },
 ];

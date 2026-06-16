@@ -7,7 +7,7 @@ export const profile = {
   subheadline:
     "Generative AI · Backend Platforms · Cloud-Deployed ML Workflows",
   intro:
-    "I build AI-powered workflow tools that turn complex business and technical processes into structured, reliable software systems.",
+    "I work on the backend and LLM-orchestration side of GenAI tools — taking slow, document-heavy workflows and making them structured, traceable, and dependable.",
   // Compact credibility strip shown directly under the hero statement.
   credibility: [
     "GenAI Platform",
@@ -34,29 +34,10 @@ export const profile = {
     "React",
     "PyTorch",
   ],
-  // Four-second value props shown on the first screen.
-  valueProps: [
-    {
-      title: "Generative AI systems",
-      detail: "LLM workflows, RAG, and multi-agent orchestration in production.",
-    },
-    {
-      title: "Backend & cloud delivery",
-      detail: "FastAPI services shipped on Docker, AWS, and Terraform.",
-    },
-    {
-      title: "Public ML projects",
-      detail: "Multimodal time-series ML with rigorous evaluation.",
-    },
-    {
-      title: "Automotive / IoT backend",
-      detail: "Telemetry, MQTT, and Kafka pipelines at vehicle scale.",
-    },
-  ],
   about: [
-    "I am a Master's student in Medical Engineering — Medical Image and Data Processing at Friedrich-Alexander-Universität Erlangen-Nürnberg, with professional experience in Generative AI workflow automation, backend engineering, cloud deployment, connected-vehicle platforms, and Python-based data processing.",
-    "Currently, I work as an IT & Digital Platforms Engineer at Siemens Energy, contributing to internal GenAI workflow systems involving FastAPI services, LLM orchestration, document intelligence, semantic retrieval, agentic workflows, async processing, frontend/API integration, and AWS-based deployment.",
-    "Previously, I worked at TATA ELXSI on connected-vehicle and IoT backend platforms for TATA Motors, building Python microservices, REST APIs, AWS IoT Core/MQTT communication, Kafka streaming workflows, telemetry pipelines, and validation workflows.",
+    "I'm a Master's student in Medical Engineering (Medical Image and Data Processing) at FAU Erlangen-Nürnberg. Alongside the degree, I've spent two industry roles building GenAI workflow tools, backend services, and connected-vehicle data platforms.",
+    "At Siemens Energy I'm an IT & Digital Platforms Engineer on an internal GenAI platform — building FastAPI services, orchestrating LLM and multi-agent workflows over document retrieval, and shipping the result on AWS.",
+    "Before that, at TATA ELXSI, I built backend services for TATA Motors' connected-vehicle platform: Python microservices, MQTT and AWS IoT Core messaging, and Kafka pipelines moving telemetry from vehicles to the cloud.",
   ],
 };
 

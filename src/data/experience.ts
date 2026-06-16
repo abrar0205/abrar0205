@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
     title: "AI Workflow Automation Platform",
     label: "Professional Project · Anonymized · Siemens Energy",
     description:
-      "Built GenAI workflow components supporting document-heavy business processes from ingestion to generated output and deployment.",
+      "Backend and orchestration for an internal GenAI platform that takes business documents from ingestion to generated, reviewable output.",
     highlights: [
       "5 LLM workflows",
       "17 CrewAI agents",
@@ -24,11 +24,11 @@ export const experiences: Experience[] = [
       "AWS deployment",
     ],
     bullets: [
-      "Developed FastAPI services for document ingestion, extraction, semantic search, content generation, and health monitoring.",
-      "Owned LLM workflow orchestration across 5 workflows linking ingestion, RAG, structured output, DOCX generation, and real-time status notifications.",
-      "Implemented CrewAI multi-agent execution with 17 specialized agents for analysis, content generation, pricing support, validation, and risk assessment.",
-      "Integrated ChromaDB, embeddings, vector search, RabbitMQ messaging, async jobs, and pytest validation.",
-      "Supported full-stack delivery with TypeScript, React, Next.js, Docker, AWS (CodeBuild, ECR, ECS, S3), and Terraform.",
+      "Built the FastAPI services behind document ingestion, extraction, semantic search, and content generation.",
+      "Orchestrated five LLM workflows from retrieval (RAG) through structured output and DOCX generation, with live status pushed back to the UI.",
+      "Ran multi-agent execution in CrewAI — 17 agents split across analysis, drafting, pricing support, validation, and risk.",
+      "Wired up ChromaDB and vector search, RabbitMQ messaging, and async jobs, with pytest on the paths that mattered.",
+      "Helped ship it end to end: React/Next.js frontend, Docker images, and AWS (ECS, ECR, CodeBuild, S3) via Terraform.",
     ],
     flowTitle: "Architecture flow",
     flow: [
@@ -59,7 +59,7 @@ export const experiences: Experience[] = [
     title: "Connected Vehicle Device Management Platform",
     label: "Professional Project · Automotive Backend · TATA ELXSI / TATA Motors",
     description:
-      "Built backend components for a connected-vehicle platform handling telemetry, device-state synchronization, and distributed data flow.",
+      "Backend for a connected-vehicle platform — moving telemetry from vehicles to the cloud and keeping device state in sync.",
     highlights: [
       "15–20% throughput improvement",
       "AWS IoT Core",
@@ -68,11 +68,11 @@ export const experiences: Experience[] = [
       "Python microservices",
     ],
     bullets: [
-      "Developed Python microservices for vehicle onboarding, telemetry ingestion, and device-state handling.",
-      "Implemented AWS IoT Core and MQTT workflows for vehicle-to-cloud messaging and near real-time telemetry.",
-      "Managed device shadow interactions to synchronize cloud-side vehicle states with connected assets.",
-      "Designed REST APIs for device registration, telemetry access, and status retrieval.",
-      "Built Kafka-based streaming workflows and supported release readiness with JMeter, unit testing, and SonarQube.",
+      "Built Python microservices for vehicle onboarding, telemetry ingestion, and device-state handling.",
+      "Connected vehicles to the cloud over MQTT and AWS IoT Core for near real-time telemetry.",
+      "Used device shadows to keep cloud-side state in sync with the physical assets.",
+      "Designed REST APIs for device registration, telemetry access, and status.",
+      "Built Kafka streaming pipelines and hardened releases with JMeter, unit tests, and SonarQube.",
     ],
     impact: "Improved streaming throughput by 15–20%.",
     flowTitle: "Data flow",
