@@ -1,19 +1,14 @@
 import { motion } from "framer-motion";
 import { profile } from "../data/profile";
 import { CTAButton } from "../components/CTAButton";
-import {
-  ArrowRightIcon,
-  GitHubIcon,
-  LinkedInIcon,
-  MapPinIcon,
-} from "../components/icons";
+import { ArrowRightIcon, GitHubIcon, LinkedInIcon } from "../components/icons";
 
 const fade = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 18 },
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay: i * 0.08, ease: [0.21, 0.47, 0.32, 0.98] },
+    transition: { duration: 0.55, delay: i * 0.09, ease: [0.21, 0.47, 0.32, 0.98] },
   }),
 };
 
@@ -23,10 +18,9 @@ export function Hero() {
       id="top"
       className="relative flex min-h-screen items-center overflow-hidden"
     >
-      {/* Decorative grid + glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.5]"
+        className="pointer-events-none absolute inset-0 opacity-50"
         style={{
           backgroundImage:
             "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
@@ -36,98 +30,67 @@ export function Hero() {
         }}
       />
 
-      <div className="section-pad relative w-full pt-32">
-        <motion.div
+      <div className="section-pad relative w-full pt-28">
+        <motion.p
           custom={0}
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs text-slate-300"
+          className="mb-5 font-mono text-sm text-accent-cyan"
         >
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-cyan opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-cyan" />
-          </span>
-          Open to AI / ML &amp; backend engineering roles
-        </motion.div>
+          {profile.name}
+        </motion.p>
 
-        <motion.p
+        <motion.h1
           custom={1}
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mb-4 flex items-center gap-2 font-mono text-sm text-accent-cyan"
-        >
-          <MapPinIcon className="h-4 w-4" /> {profile.location}
-        </motion.p>
-
-        <motion.h1
-          custom={2}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="max-w-4xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl"
+          className="max-w-4xl text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl"
         >
           {profile.headline}
         </motion.h1>
 
         <motion.p
-          custom={3}
+          custom={2}
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mt-6 max-w-3xl text-lg font-semibold leading-snug text-slate-100 sm:text-xl"
-        >
-          {profile.subheadline}
-        </motion.p>
-
-        <motion.p
-          custom={4}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300"
+          className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg"
         >
           {profile.intro}
         </motion.p>
 
-        {/* Compact credibility strip */}
         <motion.div
-          custom={5}
+          custom={3}
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mt-7 flex flex-wrap items-center gap-x-2.5 gap-y-2"
+          className="mt-7 flex flex-wrap gap-2.5"
         >
-          {profile.credibility.map((item) => (
+          {profile.proofPills.map((pill) => (
             <span
-              key={item}
-              className="rounded-full border border-accent/20 bg-accent/[0.08] px-3 py-1 text-xs font-medium text-accent-soft"
+              key={pill}
+              className="rounded-full border border-accent/25 bg-accent/[0.08] px-3.5 py-1.5 text-sm font-medium text-accent-soft"
             >
-              {item}
+              {pill}
             </span>
           ))}
         </motion.div>
 
         <motion.div
-          custom={6}
+          custom={4}
           initial="hidden"
           animate="show"
           variants={fade}
-          className="mt-8 flex flex-wrap gap-3"
+          className="mt-9 flex flex-wrap gap-3"
         >
           <CTAButton
-            href="#projects"
+            href="#featured"
             variant="primary"
             iconRight={<ArrowRightIcon className="h-4 w-4" />}
           >
-            View Projects
-          </CTAButton>
-          <CTAButton
-            href="#system-design"
-            iconRight={<ArrowRightIcon className="h-4 w-4" />}
-          >
-            View System Design
+            View Flagship Project
           </CTAButton>
           <CTAButton
             href={profile.links.github}
@@ -143,28 +106,6 @@ export function Hero() {
           >
             LinkedIn
           </CTAButton>
-        </motion.div>
-
-        <motion.div
-          custom={7}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="mt-12 border-t border-white/5 pt-6"
-        >
-          <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-slate-500">
-            Core toolkit
-          </p>
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-sm text-slate-400">
-            {profile.techStrip.map((tech, i) => (
-              <span key={tech} className="flex items-center gap-x-3">
-                {i > 0 && <span className="text-slate-700">·</span>}
-                <span className="transition-colors hover:text-accent-soft">
-                  {tech}
-                </span>
-              </span>
-            ))}
-          </div>
         </motion.div>
       </div>
     </section>

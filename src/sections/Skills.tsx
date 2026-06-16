@@ -4,12 +4,8 @@ import { SkillsGrid } from "../components/SkillsGrid";
 export function Skills() {
   return (
     <section id="skills" className="section-pad">
-      <SectionHeading
-        eyebrow="Skills"
-        title="Technical Toolkit"
-        description="Grouped by domain — from generative AI and backend engineering to cloud delivery, applied ML, and sensor-data analysis."
-      />
-      <div className="mt-12">
+      <SectionHeading eyebrow="Skills" title="Technical Toolkit" />
+      <div className="mt-8">
         <SkillsGrid />
       </div>
     </section>
