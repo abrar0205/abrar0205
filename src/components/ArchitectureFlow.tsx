@@ -7,7 +7,7 @@ interface ArchitectureFlowProps {
 
 /**
  * Horizontal, wrapping pipeline of labelled nodes connected by arrows.
- * Used for experience architecture flows and the system-design section.
+ * Used for the flagship project's architecture flow.
  */
 export function ArchitectureFlow({ title, steps }: ArchitectureFlowProps) {
   return (
