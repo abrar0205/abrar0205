@@ -9,6 +9,48 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
+function NavList({
+  active,
+  isMobile,
+  onClick,
+}: {
+  active: string;
+  isMobile?: boolean;
+  onClick?: () => void;
+}) {
+  return (
+    <>
+      {navLinks.map((link) => {
+        const isActive = active === link.href.slice(1);
+        return (
+          <li key={link.href}>
+            <a
+              href={link.href}
+              onClick={onClick}
+              aria-current={isActive ? "true" : undefined}
+              className={
+                isMobile
+                  ? `block rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
+                      isActive
+                        ? "bg-white/5 text-white"
+                        : "text-slate-300 hover:bg-white/5 hover:text-white"
+                    }`
+                  : `rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                      isActive
+                        ? "bg-white/5 text-white"
+                        : "text-slate-400 hover:text-white"
+                    }`
+              }
+            >
+              {link.label}
+            </a>
+          </li>
+        );
+      })}
+    </>
+  );
+}
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -60,24 +102,7 @@ export function Navbar() {
         </a>
 
         <ul className="hidden items-center gap-1 md:flex">
-          {navLinks.map((link) => {
-            const isActive = active === link.href.slice(1);
-            return (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  aria-current={isActive ? "true" : undefined}
-                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                    isActive
-                      ? "bg-white/5 text-white"
-                      : "text-slate-400 hover:text-white"
-                  }`}
-                >
-                  {link.label}
-                </a>
-              </li>
-            );
-          })}
+          <NavList active={active} />
         </ul>
 
         <a href="#contact" className="btn-primary hidden md:inline-flex">
@@ -118,25 +143,7 @@ export function Navbar() {
         }`}
       >
         <ul className="space-y-1 px-5 py-4">
-          {navLinks.map((link) => {
-            const isActive = active === link.href.slice(1);
-            return (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  aria-current={isActive ? "true" : undefined}
-                  className={`block rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
-                    isActive
-                      ? "bg-white/5 text-white"
-                      : "text-slate-300 hover:bg-white/5 hover:text-white"
-                  }`}
-                >
-                  {link.label}
-                </a>
-              </li>
-            );
-          })}
+          <NavList active={active} isMobile onClick={() => setOpen(false)} />
         </ul>
       </div>
     </header>
