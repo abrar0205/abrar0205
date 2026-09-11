@@ -1,50 +1,16 @@
 import { profile } from "../data/profile";
-import { Reveal } from "../components/Reveal";
-import { CTAButton } from "../components/CTAButton";
-import { GitHubIcon, LinkedInIcon, MailIcon } from "../components/icons";
-
+import { ArrowUpRightIcon } from "../components/icons";
 export function Contact() {
   return (
-    <section id="contact" className="section-pad">
-      <Reveal>
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-accent-cyan">
-            Contact
-          </p>
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Let's Connect
-          </h2>
-          <p className="mt-5 text-base leading-relaxed text-slate-300">
-            I'm looking for internships and working-student roles in GenAI and ML
-            engineering, backend, and cloud. If that's what you're hiring for,
-            I'd be glad to talk.
-          </p>
-
-          <div className="mt-9 flex flex-wrap justify-center gap-3">
-            <CTAButton
-              href={`mailto:${profile.links.email}`}
-              variant="primary"
-              icon={<MailIcon className="h-4 w-4" />}
-            >
-              Email
-            </CTAButton>
-            <CTAButton
-              href={profile.links.linkedin}
-              external
-              icon={<LinkedInIcon className="h-4 w-4" />}
-            >
-              LinkedIn
-            </CTAButton>
-            <CTAButton
-              href={profile.links.github}
-              external
-              icon={<GitHubIcon className="h-4 w-4" />}
-            >
-              GitHub
-            </CTAButton>
-          </div>
+    <section id="contact" className="section-pad contact-section">
+      <div className="contact-box">
+        <div><p className="eyebrow">05 / WHAT’S NEXT</p><h2>Let’s build<br /><span>something useful.</span></h2><p className="contact-intro">{profile.availability}. Interested in AI, backend engineering, applied ML, and biomedical data.</p></div>
+        <div className="contact-links">
+          <a href={`mailto:${profile.links.email}`}><span><small>EMAIL</small>{profile.links.email}</span><ArrowUpRightIcon className="h-5 w-5 shrink-0" /></a>
+          <a href={profile.links.linkedin} target="_blank" rel="noopener noreferrer"><span><small>CONNECT</small>LinkedIn</span><ArrowUpRightIcon className="h-5 w-5" /></a>
+          <a href={profile.links.github} target="_blank" rel="noopener noreferrer"><span><small>EXPLORE</small>GitHub</span><ArrowUpRightIcon className="h-5 w-5" /></a>
         </div>
-      </Reveal>
+      </div>
     </section>
   );
 }

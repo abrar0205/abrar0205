@@ -1,10 +1,8 @@
 export const profile = {
   name: "Abrar Assan Mohamed",
-  headline:
-    "AI Backend Engineer building secure RAG, LLM workflows, and cloud-deployed platforms.",
-  intro:
-    "I turn document-heavy and data-heavy workflows into structured, traceable AI systems using Python, FastAPI, retrieval, agents, and AWS.",
-  proofPills: ["Secure RAG", "FastAPI + AWS", "LLM Workflow Automation"],
+  headline: "AI systems. Human signals.",
+  intro: "I develop AI workflows and Python backend services, with a medical engineering background in imaging, signals, and applied machine learning.",
+  availability: "Seeking full-time opportunities in Germany for 2027",
   links: {
     github: "https://github.com/abrar0205",
     linkedin: "https://linkedin.com/in/abrar-a-m",
@@ -12,14 +10,9 @@ export const profile = {
   },
   about: {
     lines: [
-      "I build production-minded AI and backend systems — secure RAG, LLM workflows, and the services that run them.",
-      "Currently at Siemens Energy, previously at TATA ELXSI, and an M.Sc. in Medical Engineering at FAU Erlangen-Nürnberg.",
-    ],
-    stats: [
-      { value: "Siemens Energy", label: "GenAI platform engineering" },
-      { value: "TATA ELXSI", label: "Connected-vehicle backend" },
-      { value: "FAU", label: "M.Sc. Medical Engineering" },
-      { value: "AWS", label: "Docker · ECS · Terraform" },
+      "I’m a Master’s student in Medical Engineering at FAU Erlangen–Nürnberg, specializing in Medical Image and Data Processing. My work connects software engineering with the analysis of complex data.",
+      "At Siemens Energy, I contribute to AI workflows and backend services. My earlier work at TATA ELXSI involved connected-vehicle platforms. Alongside that industry experience, my academic projects explore medical imaging, biosignals, and machine learning.",
+      "My developing research interests include the relationship between EEG, audio, and facial behavior during conversation.",
     ],
   },
 };

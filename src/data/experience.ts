@@ -9,26 +9,24 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     company: "Siemens Energy",
-    role: "IT & Digital Platforms Engineer · GenAI workflows (anonymized)",
-    summary:
-      "Built backend and orchestration components for internal GenAI workflows: FastAPI services, document extraction, semantic retrieval, CrewAI agents, async processing, and AWS deployment.",
+    role: "Working student · AI workflows & backend engineering",
+    summary: "Contributing to an internal platform that supports document-heavy bidding and engineering workflows.",
     bullets: [
-      "5 LLM workflows from retrieval to structured, reviewable output",
-      "17 CrewAI agents for analysis, drafting, and validation",
-      "Shipped on AWS (ECS/ECR) with Docker and Terraform",
+      "Develop and modify FastAPI endpoints, CrewAI agents, tasks, and prompts for RFQ, offer, and pricing workflows.",
+      "Work on document extraction and generation, hybrid retrieval, and communication between messaging and vector-database components.",
+      "Debug background processing and LLM outputs, adding validation and fallback logic.",
     ],
-    stack: ["Python", "FastAPI", "CrewAI", "RAG", "ChromaDB", "AWS"],
+    stack: ["Python", "FastAPI", "CrewAI", "RAG", "RabbitMQ", "Azure OpenAI"],
   },
   {
     company: "TATA ELXSI",
-    role: "Connected-vehicle backend · TATA Motors",
-    summary:
-      "Built Python microservices and streaming backend components for connected-vehicle platforms using AWS IoT Core, MQTT, Kafka, REST APIs, and validation tooling.",
+    role: "Connected-vehicle backend · Automotive",
+    summary: "Python backend and data-processing work for connected-vehicle platforms.",
     bullets: [
-      "Microservices for telemetry ingestion and device-state sync",
-      "Vehicle-to-cloud messaging over MQTT + AWS IoT Core",
-      "Kafka streaming pipelines; ~15–20% throughput gain",
+      "Built microservices and REST APIs for telemetry ingestion and device-state synchronization.",
+      "Worked with vehicle-to-cloud messaging using AWS IoT Core and MQTT.",
+      "Contributed to Kafka streaming pipelines and backend validation workflows.",
     ],
-    stack: ["Python", "AWS IoT Core", "MQTT", "Kafka", "REST APIs"],
+    stack: ["Python", "REST APIs", "AWS IoT Core", "MQTT", "Kafka"],
   },
 ];

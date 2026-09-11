@@ -1,112 +1,33 @@
-import { motion } from "framer-motion";
 import { profile } from "../data/profile";
 import { CTAButton } from "../components/CTAButton";
-import { ArrowRightIcon, GitHubIcon, LinkedInIcon } from "../components/icons";
-
-const fade = {
-  hidden: { opacity: 0, y: 18 },
-  show: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.55, delay: i * 0.09, ease: [0.21, 0.47, 0.32, 0.98] },
-  }),
-};
+import { ArrowRightIcon, ArrowUpRightIcon } from "../components/icons";
 
 export function Hero() {
   return (
-    <section
-      id="top"
-      className="relative flex min-h-screen items-center overflow-hidden"
-    >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-50"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
-          backgroundSize: "56px 56px",
-          maskImage:
-            "radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%)",
-        }}
-      />
-
-      <div className="section-pad relative w-full pt-28">
-        <motion.p
-          custom={0}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="mb-5 font-mono text-sm text-accent-cyan"
-        >
-          {profile.name}
-        </motion.p>
-
-        <motion.h1
-          custom={1}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="max-w-4xl text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl"
-        >
-          {profile.headline}
-        </motion.h1>
-
-        <motion.p
-          custom={2}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg"
-        >
-          {profile.intro}
-        </motion.p>
-
-        <motion.div
-          custom={3}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="mt-7 flex flex-wrap gap-2.5"
-        >
-          {profile.proofPills.map((pill) => (
-            <span
-              key={pill}
-              className="rounded-full border border-accent/25 bg-accent/[0.08] px-3.5 py-1.5 text-sm font-medium text-accent-soft"
-            >
-              {pill}
-            </span>
-          ))}
-        </motion.div>
-
-        <motion.div
-          custom={4}
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          className="mt-9 flex flex-wrap gap-3"
-        >
-          <CTAButton
-            href="#featured"
-            variant="primary"
-            iconRight={<ArrowRightIcon className="h-4 w-4" />}
-          >
-            View Flagship Project
-          </CTAButton>
-          <CTAButton
-            href={profile.links.github}
-            external
-            icon={<GitHubIcon className="h-4 w-4" />}
-          >
-            GitHub
-          </CTAButton>
-          <CTAButton
-            href={profile.links.linkedin}
-            external
-            icon={<LinkedInIcon className="h-4 w-4" />}
-          >
-            LinkedIn
-          </CTAButton>
-        </motion.div>
+    <section id="top" className="hero section-pad" aria-labelledby="hero-title">
+      <div className="hero-topline"><span>SOFTWARE × MEDICAL ENGINEERING</span><span>BASED IN GERMANY</span></div>
+      <div className="hero-grid">
+        <div>
+          <p className="hero-name">Hi, I’m Abrar Assan Mohamed.</p>
+          <h1 id="hero-title">AI systems.<br /><span>Human signals.</span></h1>
+          <p className="hero-intro">{profile.intro}</p>
+          <div className="hero-actions">
+            <CTAButton href="#featured" variant="primary" iconRight={<ArrowRightIcon className="h-4 w-4" />}>Explore my work</CTAButton>
+            <a className="text-link" href={profile.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <ArrowUpRightIcon className="h-4 w-4" /></a>
+          </div>
+          <p className="availability">{profile.availability}</p>
+        </div>
+        <aside className="focus-panel" aria-label="Engineering focus">
+          <div className="focus-panel-heading"><span>MY FOCUS</span><span>01 / 02</span></div>
+          <div className="focus-item"><span className="focus-number">01</span><div><h2>Applied AI & backend</h2><p>From documents and retrieval to APIs and structured outputs.</p><span className="focus-stack">Python · FastAPI · RAG</span></div></div>
+          <div className="focus-item"><span className="focus-number">02</span><div><h2>Biomedical data</h2><p>From imaging and sensor signals to features and ML models.</p><span className="focus-stack">MRI · EMG · Multimodal ML</span></div></div>
+          <a href="#about" className="focus-footer">One engineering background. Connected interests.<ArrowRightIcon className="h-4 w-4 shrink-0" /></a>
+        </aside>
+      </div>
+      <div className="credential-strip">
+        <div><span>INDUSTRY / CURRENT</span><strong>Siemens Energy</strong></div>
+        <div><span>INDUSTRY / PREVIOUS</span><strong>TATA ELXSI</strong></div>
+        <div><span>EDUCATION / IN PROGRESS</span><strong>M.Sc. Medical Engineering <small>FAU</small></strong></div>
       </div>
     </section>
   );

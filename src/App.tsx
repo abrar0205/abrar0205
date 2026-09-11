@@ -11,19 +11,15 @@ import { Contact } from "./sections/Contact";
 export default function App() {
   return (
     <>
+      <a className="skip-link" href="#main">Skip to content</a>
       <Navbar />
-      <main>
+      <main id="main" tabIndex={-1}>
         <Hero />
-        <About />
-        <div className="section-divider" />
         <FeaturedProject />
-        <div className="section-divider" />
-        <Experience />
-        <div className="section-divider" />
         <Projects />
-        <div className="section-divider" />
+        <Experience />
+        <About />
         <Skills />
-        <div className="section-divider" />
         <Contact />
       </main>
       <Footer />

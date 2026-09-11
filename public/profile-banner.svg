@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Abrar Assan Mohamed</title>
+  <desc id="desc">AI systems. Human signals. Python backend engineering, applied AI, and biomedical data.</desc>
+  <rect width="1200" height="340" rx="12" fill="#101314"/>
+  <rect x="48" y="49" width="34" height="4" fill="#c5f277"/>
+  <text x="96" y="58" fill="#b0bab6" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2">SOFTWARE × MEDICAL ENGINEERING</text>
+  <text x="48" y="123" fill="#f2f5f3" font-family="Arial, Helvetica, sans-serif" font-size="28">Abrar Assan Mohamed</text>
+  <text x="44" y="202" fill="#f2f5f3" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="600" letter-spacing="-2">AI systems.<tspan fill="#c5f277"> Human signals.</tspan></text>
+  <path d="M48 241H1152" stroke="#343d39"/>
+  <text x="48" y="286" fill="#b0bab6" font-family="Arial, Helvetica, sans-serif" font-size="21">Python &amp; backend engineering · Applied AI · Biomedical data</text>
+</svg>

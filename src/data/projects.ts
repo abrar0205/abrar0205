@@ -9,30 +9,17 @@ export interface FeaturedProject {
 }
 
 export const featuredProject: FeaturedProject = {
-  title: "Enterprise Knowledge Intelligence Platform",
-  subtitle:
-    "Secure enterprise RAG platform with hybrid retrieval, RBAC enforcement, grounded citations, confidence scoring, FastAPI APIs, Docker, CI, and audit traceability.",
-  github:
-    "https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform",
-  readmeUrl:
-    "https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform#readme",
+  title: "EnterpriseIQ",
+  subtitle: "An enterprise knowledge retrieval project exploring how document search, access controls, and source citations can work together in a question-answering API.",
+  github: "https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform",
+  readmeUrl: "https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform#readme",
   proofChips: [
-    "Hybrid retrieval: ChromaDB + BM25",
-    "RBAC enforced before generation",
-    "Cited answers + confidence",
-    "FastAPI, Docker, CI",
-    "Offline fallback / no API key required",
+    "Hybrid vector and keyword retrieval",
+    "Role-based document filtering",
+    "Source citations and an offline extractive mode",
   ],
-  flow: [
-    "PDF/CSV/SQL/JSON",
-    "Ingestion",
-    "Chunking",
-    "Hybrid Retrieval",
-    "RBAC",
-    "Grounded Answer",
-    "Citations + Audit",
-  ],
-  stack: ["Python", "FastAPI", "ChromaDB", "BM25", "Docker", "CI", "pytest"],
+  flow: ["Documents", "Hybrid retrieval", "Access filtering", "Answer + citations"],
+  stack: ["Python", "FastAPI", "ChromaDB", "BM25", "Docker", "pytest"],
 };
 
 export interface Project {
@@ -46,45 +33,43 @@ export interface Project {
 
 export const otherProjects: Project[] = [
   {
-    title: "Lower-Limb Prosthetic Control ML",
-    type: "Applied ML",
-    outcome:
-      "Multimodal EMG/IMU pipeline for movement prediction and intent recognition.",
-    proof: ["PyTorch sequence models", "EMG/IMU fusion", "Evaluation harness"],
+    title: "Lower-Limb Prosthetic Control",
+    type: "Applied ML · Synthetic data",
+    outcome: "A reproducible EMG/IMU pipeline for gait-phase and movement-intent classification, using locally generated signals.",
+    proof: ["Sliding-window features and sensor fusion", "Random Forest and PyTorch MLP baselines", "Comparison of single-sensor and fused models"],
     stack: ["Python", "PyTorch", "scikit-learn"],
     github: "https://github.com/abrar0205/lower-limb-prosthetic-control-ml",
   },
   {
-    title: "MRI Pulse Sequence Simulation Lab",
-    type: "Medical Imaging",
-    outcome: "Signal modelling, k-space encoding, and reconstruction from scratch.",
-    proof: ["k-space FFT utilities", "Sampling masks", "Zero-filled reconstruction"],
+    title: "MRI Simulation Lab",
+    type: "Academic project · Medical imaging",
+    outcome: "Exploring how MRI sequence parameters and k-space sampling affect image contrast and reconstruction.",
+    proof: ["Synthetic phantom and signal modelling", "Centered FFT and undersampling masks", "Zero-filled reconstruction and error metrics"],
     stack: ["Python", "NumPy", "FFT"],
     github: "https://github.com/abrar0205/MRI",
   },
   {
     title: "Neuromuscular Fatigue Analysis",
-    type: "Signal Processing",
-    outcome: "Time-series analysis of HD-sEMG and force-sensor fatigue data.",
-    proof: ["RMS + FFT analysis", "Feature extraction", "Subject-level variability"],
+    type: "Group lab project · Biosignals",
+    outcome: "Analysis of surface EMG and grip-force recordings across fatigue conditions, comparing dominant and non-dominant hands.",
+    proof: ["RMS amplitude and spectral features", "Spatial muscle-activation mapping", "Notebook analysis; raw recordings required"],
     stack: ["Python", "NumPy", "SciPy"],
     github: "https://github.com/abrar0205/neuromuscular-fatigue-analysis",
   },
   {
     title: "Energy Market Intelligence",
-    type: "Cloud / Data",
-    outcome:
-      "AWS serverless-style design for commodity price data and analytics.",
-    proof: ["Adapter-based ingestion", "Processing + API layers", "Time-series storage"],
-    stack: ["AWS", "Data Pipelines", "APIs"],
+    type: "Personal demo · Simulated feeds",
+    outcome: "An event-driven market dashboard with a FastAPI backend and React frontend, modelling an AWS-style architecture locally.",
+    proof: ["Simulated exchange adapters and event bus", "REST and WebSocket data delivery", "In-browser simulation for static hosting"],
+    stack: ["FastAPI", "React", "TypeScript"],
     github: "https://github.com/abrar0205/energymarket",
   },
   {
     title: "Market Price Visualizer",
-    type: "Data Viz",
-    outcome: "Readable visualization of market-price movements and trends.",
-    proof: ["Interactive exploration", "Trend presentation"],
-    stack: ["Python", "Pandas"],
+    type: "Companion demo · Data visualization",
+    outcome: "A related energy-market dashboard exploring simulated price feeds, aggregated prices, and historical charts.",
+    proof: ["React charting and market-feed presentation", "FastAPI REST and WebSocket interfaces"],
+    stack: ["React", "Recharts", "FastAPI"],
     github: "https://github.com/abrar0205/market-price-visualizer",
   },
 ];
