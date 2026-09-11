@@ -1,144 +1,59 @@
 <div align="center">
-
-# Abrar Assan Mohamed
-
-### Generative AI · LLM Workflow Automation · Backend Engineering · Cloud Deployment · Applied ML
-
-Building practical Generative AI systems, backend platforms, and cloud-deployed ML workflows.
-
-**[→ View the live portfolio](https://abrar0205.github.io/abrar0205/)**
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-5b8cff?style=for-the-badge)](https://abrar0205.github.io/abrar0205/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abrar_A_M-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abrar-a-m)
-[![Email](https://img.shields.io/badge/Email-abraram.cnr%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abraram.cnr@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-abrar0205-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abrar0205)
-
+  <img src="./public/profile-banner.svg" alt="Abrar Assan Mohamed — AI systems. Human signals. Python backend engineering, applied AI, and biomedical data." width="100%" />
+  <br /><br />
+  <a href="https://abrar0205.github.io/abrar0205/"><strong>Portfolio</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://linkedin.com/in/abrar-a-m"><strong>LinkedIn</strong></a>
+  &nbsp; · &nbsp;
+  <a href="mailto:abraram.cnr@gmail.com"><strong>Email</strong></a>
 </div>
 
+<br />
+
+I’m **Abrar**, a Master’s student in **Medical Engineering at FAU Erlangen–Nürnberg**, with experience in Python backend development, AI workflows, and connected-vehicle platforms.
+
+At **Siemens Energy**, I contribute to AI and backend workflows as a working student. Previously, I worked on automotive backend systems at **TATA ELXSI**. My academic projects connect that software background with medical imaging, biosignal processing, and applied machine learning.
+
+**Seeking full-time opportunities in Germany for 2027** in AI, backend engineering, applied ML, and biomedical data.
+
+### What I work on
+
+- **AI workflows & retrieval:** FastAPI services, CrewAI agents, document processing, hybrid retrieval, and validation of LLM outputs.
+- **Backend & data systems:** Python APIs, asynchronous processing, messaging, and connected-vehicle data flows.
+- **Biomedical computing:** MRI simulation, EMG analysis, and multimodal sensor modelling.
+
+My developing research interests include **EEG, audio, and facial behavior during conversation**.
+
+### Selected work
+
+| Project | What it explores |
+| :--- | :--- |
+| **[EnterpriseIQ](https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform)** | Document question answering with hybrid retrieval, role-based filtering, citations, and an offline extractive mode. |
+| **[Lower-Limb Prosthetic Control](https://github.com/abrar0205/lower-limb-prosthetic-control-ml)** | EMG/IMU sensor fusion and classification with Random Forest and PyTorch MLP baselines. Uses **synthetic data**. |
+| **[MRI Simulation Lab](https://github.com/abrar0205/MRI)** | Academic Python work on MRI signal modelling, k-space sampling, and reconstruction using synthetic phantoms. |
+| **[Neuromuscular Fatigue Analysis](https://github.com/abrar0205/neuromuscular-fatigue-analysis)** | Group lab analysis of surface EMG and grip-force recordings. RMS, spectral features, and spatial activation maps; raw recordings required to reproduce. |
+| **[Energy Market Intelligence](https://github.com/abrar0205/energymarket)** | FastAPI + React dashboard with simulated exchange feeds and a locally modelled event-driven architecture. |
+| **[Market Price Visualizer](https://github.com/abrar0205/market-price-visualizer)** | A companion energy-market demo focused on simulated price feeds and interactive charts. |
+
+### Toolkit
+
+**AI & backend** · Python · FastAPI · CrewAI · RAG · ChromaDB · Azure OpenAI · RabbitMQ · Kafka
+
+**ML & signals** · PyTorch · scikit-learn · NumPy · Pandas · SciPy · FFT
+
+**Platforms & interfaces** · AWS · AWS IoT Core · Docker · Git · React · TypeScript
+
+Tools above come from a mix of professional work, academic projects, and independent demos. See the [portfolio](https://abrar0205.github.io/abrar0205/) for context.
+
 ---
 
-## About
-
-I am a Master's student in **Medical Engineering — Medical Image and Data Processing** at Friedrich-Alexander-Universität Erlangen-Nürnberg, with professional experience in **Generative AI workflow automation, backend engineering, cloud deployment, connected-vehicle platforms, and Python-based data processing**.
-
-Currently, I work as an **IT & Digital Platforms Engineer at Siemens Energy**, contributing to internal GenAI workflow systems involving FastAPI services, LLM orchestration, document intelligence, semantic retrieval, agentic workflows, async processing, frontend/API integration, and AWS-based deployment.
-
-Previously, I worked at **TATA ELXSI** on connected-vehicle and IoT backend platforms for **TATA Motors**, building Python microservices, REST APIs, AWS IoT Core/MQTT communication, Kafka streaming workflows, telemetry pipelines, and validation workflows.
-
-> Professional work is summarized at a high level and anonymized to respect confidentiality.
-
----
-
-## This repository
-
-This repo hosts my **personal portfolio website** — a fast, responsive single-page app built with **React + Vite + TypeScript + Tailwind CSS**, deployed to **GitHub Pages**.
-
-Live site: **https://abrar0205.github.io/abrar0205/**
+Professional work is summarized at a high level; employer code and internal materials are not included.
 
 <details>
-<summary><b>Developer setup &amp; deployment</b></summary>
+<summary>About this repository</summary>
 
-### Tech stack
+This repository contains both my GitHub profile README and my portfolio website, built with React, TypeScript, Vite, and Tailwind CSS.
 
-- **React 18** + **TypeScript** — UI and type safety
-- **Vite 5** — dev server and production build
-- **Tailwind CSS 3** — styling and responsive design
-- **Framer Motion** — lightweight scroll and entrance animations
-
-### Project structure
-
-```
-.
-├── index.html                 # SEO metadata, fonts, root mount
-├── vite.config.ts             # base: "/abrar0205/" for project Pages
-├── tailwind.config.js         # theme tokens (colors, fonts, animations)
-├── public/                    # static assets served as-is
-│   ├── favicon.svg
-│   └── .nojekyll              # tells Pages not to run Jekyll
-├── src/
-│   ├── main.tsx               # app entry
-│   ├── App.tsx                # section composition
-│   ├── index.css              # Tailwind layers + design system
-│   ├── data/                  # static content (typed)
-│   │   ├── profile.ts
-│   │   ├── experience.ts
-│   │   ├── projects.ts
-│   │   ├── skills.ts
-│   │   └── architecture.ts
-│   ├── components/            # reusable building blocks
-│   │   ├── Navbar.tsx  Footer.tsx  Reveal.tsx  SectionHeading.tsx  CTAButton.tsx
-│   │   ├── ExperienceCard.tsx  ProjectCard.tsx  SkillsGrid.tsx  SkillGroup.tsx
-│   │   ├── ArchitectureFlow.tsx  LayeredArchitecture.tsx  icons.tsx
-│   └── sections/             # page sections
-│       ├── Hero.tsx  About.tsx  Experience.tsx  Projects.tsx
-│       ├── SystemDesign.tsx  Skills.tsx  Contact.tsx
-└── .github/workflows/deploy.yml   # CI build + Pages deploy
-```
-
-### Run locally
-
-```bash
-npm install
-npm run dev      # start the dev server (http://localhost:5173/abrar0205/)
-npm run build    # type-check + production build into dist/
-npm run preview  # preview the production build locally
-```
-
-### Editing content
-
-All content lives in typed files under `src/data/` — update text, projects,
-skills, experience, and architecture there without touching components.
-
-### Deploy to GitHub Pages
-
-Deployment is automated via GitHub Actions (`.github/workflows/deploy.yml`).
-
-1. Push to the `main` branch.
-2. In the repository, go to **Settings → Pages** and set **Source** to
-   **GitHub Actions** (one-time setup).
-3. The workflow builds the site and publishes it. The site is served from
-   **https://abrar0205.github.io/abrar0205/**.
-
-The Vite `base` is set to `/abrar0205/` because this is a project repository.
-If you ever move the site to a user page repo (`abrar0205.github.io`), change
-`base` to `/` in `vite.config.ts`.
+See [development and deployment notes](./docs/DEVELOPMENT.md) for setup, content editing, and GitHub Pages publishing.
 
 </details>
-
----
-
-## Experience Highlights
-
-### AI Workflow Automation Platform
-**Professional Project · Anonymized · Siemens Energy**
-
-Backend and workflow components for an internal GenAI platform supporting document-heavy engineering and business workflows: FastAPI services, LLM workflow orchestration across 5 major workflows, CrewAI multi-agent execution with 17 specialized agents, RAG, ChromaDB, RabbitMQ, async jobs, and full AWS deployment.
-
-**Stack:** Python · FastAPI · CrewAI · RAG · ChromaDB · RabbitMQ · TypeScript · React · Next.js · Docker · AWS ECS/ECR/CodeBuild/S3 · Terraform
-
-### Connected Vehicle Device Management Platform
-**Professional Project · Automotive Backend · TATA ELXSI / TATA Motors**
-
-Backend components for a connected-vehicle platform handling telemetry, device-state synchronization, and distributed data flow: Python microservices, AWS IoT Core/MQTT, device shadows, REST APIs, and Kafka streaming pipelines. **Improved streaming throughput by 15–20%.**
-
-**Stack:** Python · REST APIs · Microservices · AWS IoT Core · MQTT · Kafka · JMeter · SonarQube
-
----
-
-## Selected Projects
-
-| Project | Focus |
-| --- | --- |
-| [Lower-Limb Prosthetic Control ML](https://github.com/abrar0205/lower-limb-prosthetic-control-ml) | Multimodal EMG/IMU ML — movement prediction, gait segmentation, intent recognition |
-| [MRI Pulse Sequence Simulation Lab](https://github.com/abrar0205/MRI) | MRI signal modelling, k-space encoding, undersampling, reconstruction |
-| [Neuromuscular Fatigue Analysis](https://github.com/abrar0205/neuromuscular-fatigue-analysis) | HD-sEMG and force-sensor time-series analysis |
-| [Energy Market Intelligence](https://github.com/abrar0205/energymarket) | System design and data-flow demo |
-| [Market Price Visualizer](https://github.com/abrar0205/market-price-visualizer) | Market price exploration and trend visualization |
-
----
-
-<div align="center">
-
-Open to internships and working student roles in Generative AI, ML Engineering, AI workflow automation, backend engineering, cloud platforms, and applied data science.
-
-</div>
