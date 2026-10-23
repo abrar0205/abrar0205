@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRightIcon } from "./icons";
+import { Monogram } from "./Monogram";
 
 const navLinks = [
   { label: "Work", href: "#featured" },
@@ -56,14 +57,14 @@ export function Navbar() {
   return (
     <header className="site-header" ref={header}>
       <nav className="nav-shell" aria-label="Main navigation">
-        <a className="wordmark" href="#top" onClick={() => setOpen(false)} aria-label="Abrar, back to top">abrar<span>.</span></a>
+        <a className="wordmark" href="#top" onClick={() => setOpen(false)} aria-label="Abrar Assan Mohamed, back to top"><Monogram /><span>Abrar Assan Mohamed<small>SOFTWARE ENGINEER</small></span></a>
         <ul className="desktop-nav">{links}</ul>
-        <a href="#contact" className="nav-contact">Let’s connect <ArrowUpRightIcon className="h-4 w-4" /></a>
+        <a href="#contact" className="nav-contact">Let’s connect <ArrowUpRightIcon aria-hidden="true" /></a>
         <button ref={toggle} type="button" className="menu-toggle" aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? "Close navigation menu" : "Open navigation menu"} onClick={() => setOpen(value => !value)}>
           {open ? "Close" : "Menu"}<span aria-hidden="true">{open ? "×" : "+"}</span>
         </button>
       </nav>
-      {open && <nav id="mobile-menu" className="mobile-nav" aria-label="Mobile navigation"><ul>{links}<li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li></ul></nav>}
+      <nav id="mobile-menu" className="mobile-nav" hidden={!open} aria-label="Mobile navigation"><ul>{links}<li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li></ul></nav>
     </header>
   );
 }

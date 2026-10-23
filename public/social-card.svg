@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f6f4ed"/>
+  <rect x="28" y="28" width="1144" height="574" rx="4" fill="none" stroke="#ced7c5"/>
+  <g transform="translate(70 70)" fill="none" stroke="#214e3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="52" height="52" rx="12"/><path d="M10 36 20 15l10 21M14 29h12M32 36V17l6 12 6-12v19"/>
+  </g>
+  <text x="144" y="92" fill="#24382f" font-family="DejaVu Sans" font-size="22">Abrar Assan Mohamed</text>
+  <text x="144" y="117" fill="#64715a" font-family="DejaVu Sans Mono" font-size="11" letter-spacing="2">SOFTWARE ENGINEER · GERMANY</text>
+  <text x="70" y="254" fill="#24382f" font-family="DejaVu Serif" font-size="62" letter-spacing="-2">Software with purpose.</text>
+  <text x="70" y="337" fill="#4c6845" font-family="DejaVu Serif" font-style="italic" font-size="62" letter-spacing="-2">Engineering with depth.</text>
+  <path d="M70 422H1130" stroke="#d7dbce"/>
+  <text x="70" y="472" fill="#56674c" font-family="DejaVu Sans" font-size="21">Backend · Applied AI · Data · Automotive</text>
+  <text x="70" y="537" fill="#6e7d62" font-family="DejaVu Sans Mono" font-size="16">abrar0205.github.io/abrar0205</text>
+  <g transform="translate(1030 275)" fill="none" stroke="#98a98b">
+    <circle r="72"/><circle r="50" stroke-dasharray="3 6"/><path d="M-95 0H95M0-95V95" stroke-width=".5"/>
+    <rect x="-23" y="-23" width="46" height="46" rx="12" fill="#214e3c" stroke="none"/>
+    <path d="m-12 6 7-7-7-7m24 14-7-7 7-7" stroke="#eef0dc" stroke-width="1.8"/>
+  </g>
+</svg>

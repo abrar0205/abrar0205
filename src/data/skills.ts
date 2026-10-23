@@ -1,11 +1,9 @@
 export interface SkillGroup {
-  category: string;
-  skills: string[];
+  category: string; context: string; skills: string[];
 }
-
 export const skillGroups: SkillGroup[] = [
-  { category: "AI & retrieval", skills: ["RAG", "CrewAI", "Hybrid retrieval", "ChromaDB", "Azure OpenAI", "Prompt development"] },
-  { category: "Backend & messaging", skills: ["Python", "FastAPI", "REST APIs", "Async processing", "RabbitMQ", "Kafka"] },
-  { category: "ML & signal analysis", skills: ["PyTorch", "scikit-learn", "NumPy", "Pandas", "SciPy", "FFT"] },
-  { category: "Platforms & interfaces", skills: ["AWS", "AWS IoT Core", "Docker", "Git", "React", "TypeScript"] },
+  { category: "Backend & data", context: "Services, messaging, and data flows", skills: ["Python", "FastAPI", "REST APIs", "SQL", "Kafka", "RabbitMQ"] },
+  { category: "Applied AI & ML", context: "Retrieval, evaluation, and useful baselines", skills: ["RAG", "CrewAI", "ChromaDB", "PyTorch", "scikit-learn", "NumPy"] },
+  { category: "Connected systems", context: "Vehicle-to-cloud and observability", skills: ["AWS IoT Core", "MQTT", "Telemetry", "Trace analysis", "Signal processing"] },
+  { category: "Delivery & interfaces", context: "From a reproducible build to a usable tool", skills: ["Docker", "Git", "GitHub Actions", "pytest", "React", "TypeScript"] },
 ];

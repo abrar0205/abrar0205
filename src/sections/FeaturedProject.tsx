@@ -1,35 +1,39 @@
-import { featuredProject as p } from "../data/projects";
-import { CTAButton } from "../components/CTAButton";
-import { Reveal } from "../components/Reveal";
+import { featuredProjects } from "../data/projects";
+import { ProjectVisual } from "../components/ProjectVisual";
+import { ArrowUpRightIcon, ArrowRightIcon } from "../components/icons";
 import { SectionHeading } from "../components/SectionHeading";
-import { ArrowUpRightIcon, GitHubIcon } from "../components/icons";
-
 export function FeaturedProject() {
-  return (
-    <section id="featured" className="section-pad section-rule">
-      <SectionHeading eyebrow="01 / SELECTED WORK" title="From information to useful systems." />
-      <Reveal>
-        <article className="featured-card">
-          <div className="featured-copy">
-            <p className="project-type">FEATURED PUBLIC PROJECT / KNOWLEDGE RETRIEVAL</p>
-            <h3>{p.title}<span>Enterprise Knowledge Intelligence</span></h3>
-            <p>{p.subtitle}</p>
-            <ul className="feature-list">{p.proofChips.map(chip => <li key={chip}>{chip}</li>)}</ul>
-            <div className="project-actions">
-              <CTAButton href={p.github} external variant="primary" icon={<GitHubIcon className="h-4 w-4" />}>View repository</CTAButton>
-              <a className="text-link" href={p.readmeUrl} target="_blank" rel="noopener noreferrer">Read the overview <ArrowUpRightIcon className="h-4 w-4" /></a>
-            </div>
+  return <section id="featured" className="section-shell section-pad" aria-labelledby="work-title">
+    <div className="section-title-row">
+      <SectionHeading eyebrow="01 / SELECTED WORK" title="Built to be explored." id="work-title" description="Three projects that bring together backend engineering, applied AI, and connected systems." />
+      <span className="margin-note">PUBLIC CODE.<br />VISIBLE DECISIONS.</span>
+    </div>
+    <div className="featured-list">{featuredProjects.map((project, index) =>
+      <article className={`featured-project project-${project.id}`} key={project.id} aria-labelledby={`title-${project.id}`}>
+        <ProjectVisual kind={project.id} />
+        <div className="featured-copy">
+          <p className="eyebrow"><span className="project-index">0{index + 1}</span>{project.category}</p>
+          <h3 id={`title-${project.id}`}>{project.title}</h3>
+          <p className="project-headline">{project.headline}</p>
+          <p className="project-description">{project.description}</p>
+          <ul className="project-highlights">{project.highlights.map(item => <li key={item}>{item}</li>)}</ul>
+          <div className="tags">{project.stack.map(item => <span className="chip" key={item}>{item}</span>)}</div>
+          <div className="project-links">
+            {project.demo && <a className="btn-primary small" href={project.demo} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title} live demo`}>Live demo <ArrowUpRightIcon aria-hidden="true" /></a>}
+            <a className="text-link" href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`Explore ${project.title} on GitHub`}>Explore repository <ArrowUpRightIcon aria-hidden="true" /></a>
           </div>
-          <div className="architecture-panel">
-            <p className="eyebrow">CONCEPTUAL QUERY PATH</p>
-            <ol className="query-flow">
-              {p.flow.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></li>)}
-            </ol>
-            <p className="architecture-note">A simplified view of retrieval and answer generation. See the repository for implementation details.</p>
-            <div className="tags">{p.stack.map(tech => <span className="chip" key={tech}>{tech}</span>)}</div>
+        </div>
+        <details className="case-details">
+          <summary><span>Inside the build <span className="summary-project">/ {project.title}</span></span><span className="detail-toggle" aria-hidden="true">+</span></summary>
+          <div className="case-content">
+            <div><h4>The problem</h4><p>{project.problem}</p></div>
+            <div><h4>The implementation</h4><p>{project.approach}</p></div>
+            <div><h4>The evidence</h4><p>{project.evidence}</p></div>
+            <p className="scope-note">{project.scope}</p>
+            <a className="text-link" href={`${project.github}#readme`} target="_blank" rel="noopener noreferrer">Read the technical documentation <ArrowRightIcon aria-hidden="true" /></a>
           </div>
-        </article>
-      </Reveal>
-    </section>
-  );
+        </details>
+      </article>
+    )}</div>
+  </section>;
 }
