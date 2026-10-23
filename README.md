@@ -1,59 +1,67 @@
 <div align="center">
-  <img src="./public/profile-banner.svg" alt="Abrar Assan Mohamed — AI systems. Human signals. Python backend engineering, applied AI, and biomedical data." width="100%" />
+  <img src="./public/profile-banner.svg" alt="Abrar Assan Mohamed — Software with purpose. Engineering with depth. Backend, applied AI, data, and connected systems." width="100%" />
   <br /><br />
-  <a href="https://abrar0205.github.io/abrar0205/"><strong>Portfolio</strong></a>
+  <a href="https://abrar0205.github.io/abrar0205/"><strong>Explore my portfolio →</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://linkedin.com/in/abrar-a-m"><strong>LinkedIn</strong></a>
+  <a href="https://linkedin.com/in/abrar-a-m">LinkedIn</a>
   &nbsp; · &nbsp;
-  <a href="mailto:abraram.cnr@gmail.com"><strong>Email</strong></a>
+  <a href="mailto:abraram.cnr@gmail.com">Email</a>
 </div>
 
 <br />
 
-I’m **Abrar**, a Master’s student in **Medical Engineering at FAU Erlangen–Nürnberg**, with experience in Python backend development, AI workflows, and connected-vehicle platforms.
+I’m **Abrar Assan Mohamed**, a software engineer working across **backend services, applied AI, data, and connected systems**.
 
-At **Siemens Energy**, I contribute to AI and backend workflows as a working student. Previously, I worked on automotive backend systems at **TATA ELXSI**. My academic projects connect that software background with medical imaging, biosignal processing, and applied machine learning.
+At **Siemens Energy**, I contribute to AI and backend workflows as a working student. Previously, I worked on connected-vehicle software at **Tata Elxsi**. I enjoy taking a problem from its data and service contracts through to a usable, testable application.
 
-**Seeking full-time opportunities in Germany for 2027** in AI, backend engineering, applied ML, and biomedical data.
+**Open to full-time opportunities in Germany for 2027** — software and backend engineering, applied AI, data, and automotive roles.
 
-### What I work on
+### Selected projects
 
-- **AI workflows & retrieval:** FastAPI services, CrewAI agents, document processing, hybrid retrieval, and validation of LLM outputs.
-- **Backend & data systems:** Python APIs, asynchronous processing, messaging, and connected-vehicle data flows.
-- **Biomedical computing:** MRI simulation, EMG analysis, and multimodal sensor modelling.
+| Project | What you can explore | Links |
+| :--- | :--- | :--- |
+| **IgnitionTrace** | An automotive engineering workbench: replay traces, inspect evidence, compare runs, and capture measurements with an Android app recorder. | [Source & local setup](https://github.com/abrar0205/ignition-trace) |
+| **EnterpriseIQ** | A document question-answering API with vector + keyword retrieval, role-based filtering, citations, and an offline extractive mode. | [Source & architecture](https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform) |
+| **ModalityOps** | A local-first workbench for signal quality, recording gaps, and shared-event clock estimation across EEG, audio, and video. | [Live demo](https://abrar0205.github.io/modalityops/) · [Source](https://github.com/abrar0205/modalityops) |
 
-My developing research interests include **EEG, audio, and facial behavior during conversation**.
+IgnitionTrace’s generated scenarios use synthetic traces; its Android recorder measures its own app and permitted vehicle properties. ModalityOps’ hosted demo uses precomputed reports from synthetic signals; fresh analyses run locally.
 
-### Selected work
+### The project notebook
 
-| Project | What it explores |
-| :--- | :--- |
-| **[EnterpriseIQ](https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform)** | Document question answering with hybrid retrieval, role-based filtering, citations, and an offline extractive mode. |
-| **[Lower-Limb Prosthetic Control](https://github.com/abrar0205/lower-limb-prosthetic-control-ml)** | EMG/IMU sensor fusion and classification with Random Forest and PyTorch MLP baselines. Uses **synthetic data**. |
-| **[MRI Simulation Lab](https://github.com/abrar0205/MRI)** | Academic Python work on MRI signal modelling, k-space sampling, and reconstruction using synthetic phantoms. |
-| **[Neuromuscular Fatigue Analysis](https://github.com/abrar0205/neuromuscular-fatigue-analysis)** | Group lab analysis of surface EMG and grip-force recordings. RMS, spectral features, and spatial activation maps; raw recordings required to reproduce. |
-| **[Energy Market Intelligence](https://github.com/abrar0205/energymarket)** | FastAPI + React dashboard with simulated exchange feeds and a locally modelled event-driven architecture. |
-| **[Market Price Visualizer](https://github.com/abrar0205/market-price-visualizer)** | A companion energy-market demo focused on simulated price feeds and interactive charts. |
+- **[Energy Market Intelligence](https://github.com/abrar0205/energymarket)** — FastAPI + React, simulated market feeds, and REST/WebSocket delivery.
+- **[Audio–Video Signal Toolkit](https://github.com/abrar0205/multimodal-audio-video-signal-analysis)** — reusable Python API and CLI for acoustic features, video QC, and missing-data-aware analysis.
+- **[Clinical NLP Benchmark](https://github.com/abrar0205/clinical-nlp-labeling-benchmark)** — keyword, negation-rule, and local-LLM baselines evaluated on synthetic text snippets.
+- **[Federated Learning Lab](https://github.com/abrar0205/federated-learning-feature-heterogeneity)** — a PyTorch learning project comparing FedAvg and FedBN under simulated client feature shifts.
+- **[Sensor Fusion for Movement](https://github.com/abrar0205/lower-limb-prosthetic-control-ml)** — synthetic EMG/IMU classification with single-sensor and fused baselines.
+- **[MRI Simulation Lab](https://github.com/abrar0205/MRI)** — Python signal modelling, k-space sampling, and reconstruction with synthetic phantoms.
 
 ### Toolkit
 
-**AI & backend** · Python · FastAPI · CrewAI · RAG · ChromaDB · Azure OpenAI · RabbitMQ · Kafka
+**Backend & data** · Python · FastAPI · REST APIs · SQL · Kafka · RabbitMQ
 
-**ML & signals** · PyTorch · scikit-learn · NumPy · Pandas · SciPy · FFT
+**Applied AI & ML** · RAG · CrewAI · ChromaDB · PyTorch · scikit-learn · NumPy
 
-**Platforms & interfaces** · AWS · AWS IoT Core · Docker · Git · React · TypeScript
+**Connected systems** · AWS IoT Core · MQTT · Telemetry · Trace analysis · Signal processing
 
-Tools above come from a mix of professional work, academic projects, and independent demos. See the [portfolio](https://abrar0205.github.io/abrar0205/) for context.
+**Delivery & interfaces** · Docker · GitHub Actions · pytest · React · TypeScript
+
+These tools come from professional experience and independent projects. The [portfolio](https://abrar0205.github.io/abrar0205/) explains the context and implementation behind the work.
+
+### Background
+
+M.Sc. Medical Engineering, **FAU Erlangen–Nürnberg** — in progress, with a focus on Medical Image and Data Processing.
+
+Professional experience is summarized at a high level. Employer code, internal materials, and private datasets are not published here.
 
 ---
 
-Professional work is summarized at a high level; employer code and internal materials are not included.
+[**Let’s connect**](mailto:abraram.cnr@gmail.com) · [Request my CV](mailto:abraram.cnr@gmail.com?subject=CV%20request%20%E2%80%94%20Abrar%20Assan%20Mohamed)
 
 <details>
 <summary>About this repository</summary>
 
-This repository contains both my GitHub profile README and my portfolio website, built with React, TypeScript, Vite, and Tailwind CSS.
+This repository contains my GitHub profile README and portfolio website, built with React, TypeScript, Vite, and Tailwind CSS.
 
-See [development and deployment notes](./docs/DEVELOPMENT.md) for setup, content editing, and GitHub Pages publishing.
+See [development and deployment notes](./docs/DEVELOPMENT.md) for local setup, content editing, and GitHub Pages publishing.
 
 </details>

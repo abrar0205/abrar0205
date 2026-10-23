@@ -1,8 +1,8 @@
 export const profile = {
   name: "Abrar Assan Mohamed",
-  headline: "AI systems. Human signals.",
-  intro: "I develop AI workflows and Python backend services, with a medical engineering background in imaging, signals, and applied machine learning.",
-  availability: "Seeking full-time opportunities in Germany for 2027",
+  headline: "Software with purpose. Engineering with depth.",
+  intro: "I build backend services, applied AI workflows, and tools for connected systems. My experience spans enterprise software at Siemens Energy and automotive platforms at Tata Elxsi.",
+  availability: "Open to full-time opportunities in Germany for 2027",
   links: {
     github: "https://github.com/abrar0205",
     linkedin: "https://linkedin.com/in/abrar-a-m",
@@ -10,11 +10,10 @@ export const profile = {
   },
   about: {
     lines: [
-      "I’m a Master’s student in Medical Engineering at FAU Erlangen–Nürnberg, specializing in Medical Image and Data Processing. My work connects software engineering with the analysis of complex data.",
-      "At Siemens Energy, I contribute to AI workflows and backend services. My earlier work at TATA ELXSI involved connected-vehicle platforms. Alongside that industry experience, my academic projects explore medical imaging, biosignals, and machine learning.",
-      "My developing research interests include the relationship between EEG, audio, and facial behavior during conversation.",
+      "I’m a software engineer who likes understanding the whole path: where data comes from, how a service handles it, and what the person using it needs to see.",
+      "That has taken me from connected-vehicle backends at Tata Elxsi to AI and document workflows at Siemens Energy. Across domains, I’m drawn to the same problems: making systems easier to understand, test, and trust.",
+      "My independent projects give me space to work across the stack—from Python analysis and APIs to browser interfaces, reproducible examples, and documentation.",
     ],
   },
 };
-
 export type Profile = typeof profile;

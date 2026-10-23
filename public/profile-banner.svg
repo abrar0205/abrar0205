@@ -1,11 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
-  <title id="title">Abrar Assan Mohamed</title>
-  <desc id="desc">AI systems. Human signals. Python backend engineering, applied AI, and biomedical data.</desc>
-  <rect width="1200" height="340" rx="12" fill="#101314"/>
-  <rect x="48" y="49" width="34" height="4" fill="#c5f277"/>
-  <text x="96" y="58" fill="#b0bab6" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2">SOFTWARE × MEDICAL ENGINEERING</text>
-  <text x="48" y="123" fill="#f2f5f3" font-family="Arial, Helvetica, sans-serif" font-size="28">Abrar Assan Mohamed</text>
-  <text x="44" y="202" fill="#f2f5f3" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="600" letter-spacing="-2">AI systems.<tspan fill="#c5f277"> Human signals.</tspan></text>
-  <path d="M48 241H1152" stroke="#343d39"/>
-  <text x="48" y="286" fill="#b0bab6" font-family="Arial, Helvetica, sans-serif" font-size="21">Python &amp; backend engineering · Applied AI · Biomedical data</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+  <title id="title">Abrar Assan Mohamed — Software engineer</title>
+  <desc id="desc">Software with purpose. Engineering with depth. Backend, applied AI, data, and connected systems.</desc>
+  <rect width="1200" height="380" rx="10" fill="#f6f4ed"/>
+  <rect x="1" y="1" width="1198" height="378" rx="10" fill="none" stroke="#d7dbce"/>
+  <g transform="translate(48 42)" fill="none" stroke="#214e3c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="42" height="42" rx="10"/><path d="M8 29 16 12l8 17M11 23h10M25 29V14l5 9 5-9v15"/>
+  </g>
+  <text x="110" y="61" fill="#24382f" font-family="Arial, sans-serif" font-size="18">Abrar Assan Mohamed</text>
+  <text x="110" y="80" fill="#68745e" font-family="monospace" font-size="9" letter-spacing="2">SOFTWARE ENGINEER · GERMANY</text>
+  <text x="48" y="165" fill="#24382f" font-family="Georgia, serif" font-size="58" letter-spacing="-1">Software with purpose.</text>
+  <text x="48" y="231" fill="#4c6845" font-family="Georgia, serif" font-style="italic" font-size="58" letter-spacing="-1">Engineering with depth.</text>
+  <path d="M48 282h1104" stroke="#d7dbce"/>
+  <text x="48" y="324" fill="#5b6a52" font-family="Arial, sans-serif" font-size="17">Backend engineering · Applied AI · Data · Connected systems</text>
+  <g transform="translate(992 170)" fill="none" stroke="#9aa98d">
+    <circle r="82"/><circle r="59" stroke-dasharray="3 6"/><path d="M-110 0h220M0-110v220" stroke-width=".5"/>
+    <rect x="-26" y="-26" width="52" height="52" rx="13" fill="#214e3c" stroke="none"/>
+    <path d="m-13 7 8-8-8-8m26 16-8-8 8-8" stroke="#eef0dc" stroke-width="1.8"/>
+    <circle cx="-82" r="5" fill="#f6f4ed" stroke="#214e3c"/><circle cy="82" r="5" fill="#d5dd9f" stroke="#214e3c"/><circle cx="82" r="5" fill="#f6f4ed" stroke="#214e3c"/>
+  </g>
 </svg>

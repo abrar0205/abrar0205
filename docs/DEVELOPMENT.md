@@ -4,7 +4,7 @@ This repository serves two purposes: the root README appears on the GitHub profi
 
 ## Local setup
 
-Use a Node.js version supported by the project's existing Vite version. The current Pages workflow uses Node.js 20.
+The current Pages workflow uses Node.js 20.
 
 ```bash
 npm ci
@@ -13,41 +13,55 @@ npm run dev
 
 Open the Vite URL with the project base path: `/abrar0205/`.
 
-## Build
+## Validation
 
 ```bash
 npm run build
+npm run check:content
 npm run preview
 ```
 
-The build runs TypeScript checking and creates the static site in `dist/`.
+The build runs strict TypeScript checks and produces the static site in `dist/`. The content check verifies the rendered page's internal anchors, accessible section structure, project links, key copy, and GitHub Pages asset paths. It uses server rendering, so it does not replace testing in a browser.
+
+Before publishing, inspect desktop and mobile layouts, the mobile menu (including Escape), project filters, expandable case studies, copy-email feedback, external links, and keyboard focus. Check reduced-motion settings and the JavaScript-disabled fallback.
 
 ## Editing
 
 | Content | Location |
 | --- | --- |
-| Name, summary, contact links, availability | `src/data/profile.ts` |
+| Summary, contact links, availability | `src/data/profile.ts` |
 | Professional experience | `src/data/experience.ts` |
-| Featured and selected projects | `src/data/projects.ts` |
+| Featured case studies and project notebook | `src/data/projects.ts` |
 | Toolkit | `src/data/skills.ts` |
 | Page order | `src/App.tsx` |
 | Sections and reusable UI | `src/sections/`, `src/components/` |
-| Theme, layout, responsive behavior | `src/index.css` |
-| Page title and metadata | `index.html` |
+| Theme and responsive behavior | `src/index.css` |
+| Page metadata and no-JavaScript fallback | `index.html` |
 | GitHub profile | `README.md`, `public/profile-banner.svg` |
+| Social preview | `public/social-card.svg`, `public/social-card.png` |
 
-Keep the README, metadata, and portfolio consistent when changing availability or background. Label synthetic data, simulations, academic group work, and research interests accurately. Include achievement metrics only when they are verified personal contributions.
+Keep the README, metadata, and site consistent when changing availability or background. Education is a background detail; the professional positioning spans software, backend, applied AI, data, and automotive engineering. Only publish verified contributions. Identify synthetic examples and simulation boundaries clearly.
 
-The design uses a charcoal background and lime accent, with responsive grids at 1100, 899, and 560 pixels. Navigation includes a skip link, an accessible mobile disclosure menu, Escape dismissal, and visible keyboard focus. Reduced-motion preferences disable scroll movement and reveal transforms.
+The theme uses warm ivory, forest green, serif display typography, a custom AM monogram, and authored vector illustrations. Project illustrations are design sketches, not screenshots or measured results. The site includes a skip link, mobile navigation with Escape dismissal, visible keyboard focus, native expandable case studies, project-filter announcements, and reduced-motion styles.
+
+The CV link opens a pre-addressed email request. It does not promise a downloadable file. Add a public PDF only when a reviewed CV is available.
+
+The social preview PNG is rendered from the SVG at 1200 × 630. With CairoSVG and DejaVu fonts installed:
+
+```bash
+cairosvg public/social-card.svg -o public/social-card.png
+```
+
+## Demo links
+
+Only add a live-demo button after confirming that the public URL works. ModalityOps has a public hosted demo. IgnitionTrace currently links to its repository and local setup; its public Pages URL returned 404 when this portfolio was refreshed.
 
 ## Publishing
 
-The existing `.github/workflows/deploy.yml` builds and deploys pushes to `main`. It can also be run manually in GitHub Actions. GitHub Pages must use **GitHub Actions** as its source.
+Pull requests run `.github/workflows/check.yml`. Pushes to `main` run `.github/workflows/deploy.yml`, which checks, builds, and publishes to GitHub Pages. Pages must use **GitHub Actions** as its source.
 
-The Vite base path is `/abrar0205/`; preserve it while the site remains at:
+Preserve the Vite base path `/abrar0205/` while the site remains at:
 
 https://abrar0205.github.io/abrar0205/
 
-Review the changes and run the build before publishing. After publication, check the GitHub Actions build and deploy jobs for the published commit.
-
-To undo a published change, revert its commit on `main`; the existing workflow will deploy the restored source. Do not force-push or rewrite history.
+After publishing, check the build and deploy jobs and load the public URL. Revert the commit on `main` to restore an earlier version; do not rewrite history.
