@@ -31,10 +31,10 @@ try {
     assert(/href="[^\"]+"/.test(tag), `Link has no destination: ${tag}`);
     if (tag.includes('target="_blank"')) assert(tag.includes('rel="noopener noreferrer"'), "External tabs need safe rel attributes");
   }
-  for (const name of ["IgnitionTrace", "EnterpriseIQ", "ModalityOps", "Siemens Energy", "Tata Elxsi"]) {
+  for (const name of ["FitTrace", "PeopleOps", "ShiftTwin", "IgnitionTrace", "EnterpriseIQ", "ModalityOps", "Siemens Energy", "Tata Elxsi"]) {
     assert(html.includes(name), `Missing featured work or experience: ${name}`);
   }
-  assert.equal((html.match(/<details\b/g) ?? []).length, 3, "Each featured project needs an expandable case study");
+  assert.equal((html.match(/<details\b/g) ?? []).length, 6, "Each featured project needs an expandable case study");
   assert(html.includes('aria-label="Filter additional projects"'), "Project filters need an accessible name");
   assert(html.includes('aria-pressed="true"'), "The initial project filter must expose its selection");
   assert(html.includes('role="status"'), "Interactive updates need accessible feedback");

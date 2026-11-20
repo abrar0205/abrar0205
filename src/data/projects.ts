@@ -1,4 +1,4 @@
-export type ProjectKind = "ignition" | "enterprise" | "modality";
+export type ProjectKind = "fittrace" | "peopleops" | "shifttwin" | "ignition" | "enterprise" | "modality";
 export interface FeaturedProject {
   id: ProjectKind; title: string; category: string; headline: string;
   description: string; github: string; demo?: string; stack: string[];
@@ -6,12 +6,58 @@ export interface FeaturedProject {
 }
 export const featuredProjects: FeaturedProject[] = [
   {
+    id: "fittrace",
+    title: "FitTrace",
+    category: "Automotive · Quality engineering",
+    headline: "From a panel gap to an evidence-backed action.",
+    description: "A full-stack dimensional quality workbench: measure calibrated inspection images, connect deviations to simulated production history, and assess corrective actions.",
+    github: "https://github.com/abrar0205/fittrace",
+    demo: "https://abrar0205.github.io/fittrace/",
+    stack: ["Python", "OpenCV", "PostgreSQL", "React"],
+    highlights: ["Calibrated gap measurement", "Traceable ETL & statistical investigation", "Paired corrective-action simulations"],
+    problem: "A gap outside tolerance is only the starting signal. Quality engineers also need reproducible measurements, inspection history, and defensible clues about where a deviation originated.",
+    approach: "OpenCV measures generated, calibrated images. A FastAPI and PostgreSQL application links results to simulated line events, control charts, change-point analysis, and corrective-action simulations.",
+    evidence: "The repository includes deterministic generation, error and recovery benchmarks, data-quality gates, tests, measurement provenance, and reports. The live site is a generated snapshot of the full-stack run.",
+    scope: "Independent project. Images and factory data are simulated; no real manufacturing or OEM data. Server-dependent re-analysis and new jobs require the local full-stack app.",
+  },
+  {
+    id: "peopleops",
+    title: "PeopleOps",
+    category: "People analytics · Full-stack",
+    headline: "See the workforce signal. Verify the number.",
+    description: "A manufacturing people-analytics application that turns synthetic attendance, attrition, and training data into traceable, aggregate operational insights.",
+    github: "https://github.com/abrar0205/peopleops-ai",
+    demo: "https://abrar0205.github.io/peopleops-ai/",
+    stack: ["React", "TypeScript", "PostgreSQL", "tRPC"],
+    highlights: ["18 SQL data-quality rules", "Department & shift drill-downs", "Metric-grounded aggregate insights"],
+    problem: "Dashboards are easy to create. Knowing whether their workforce metrics are reliable, privacy-conscious, and useful for decisions is harder.",
+    approach: "Synthetic extracts pass through staging, validation, and held-back records before reaching SQL analytics. React, tRPC, Prisma, and PGlite power the interactive browser demo.",
+    evidence: "The project exposes KPI definitions and SQL evidence, tests the quality gate, and suppresses groups smaller than ten. It includes a constrained assistant for aggregate metrics.",
+    scope: "Independent demonstration using synthetic workforce data. It does not score individual employees or represent a production HR system.",
+  },
+  {
+    id: "shifttwin",
+    title: "ShiftTwin",
+    category: "Simulation · Workforce planning",
+    headline: "Find the fragile shift before it happens.",
+    description: "An interactive manufacturing simulator for testing how qualification gaps, absence scenarios, and targeted training affect critical station coverage.",
+    github: "https://github.com/abrar0205/ShiftTwin",
+    demo: "https://abrar0205.github.io/ShiftTwin/",
+    stack: ["React", "TypeScript", "Three.js", "Simulation"],
+    highlights: ["5,000-trial Monte Carlo simulation", "Max-flow station assignment", "Model-driven 3D factory view"],
+    problem: "A workforce can look fully staffed on paper while lacking the right qualified people to cover critical stations during absence or training changes.",
+    approach: "A seeded synthetic plant combines worker qualifications and shift scenarios with station-matching, simulation, and intervention search. A 3D factory visualizes representative modeled outcomes.",
+    evidence: "The implementation documents 180 synthetic workers, 12 critical stations, deterministic simulations, and tests for matching and scenario behavior.",
+    scope: "Independent scenario-planning prototype using synthetic workers and simplified factory assumptions; not an operational scheduling or compliance product.",
+  },
+  {
     id: "ignition",
     title: "IgnitionTrace",
     category: "Automotive · Observability",
     headline: "Make infotainment faults inspectable.",
     description: "An engineering workbench that connects vehicle signals, app behavior, and evidence—so an unexpected delay becomes a trace you can investigate.",
     github: "https://github.com/abrar0205/ignition-trace",
+    demo: "https://abrar0205.github.io/ignition-trace/",
     stack: ["Python", "TypeScript", "Kotlin", "SQLite"],
     highlights: ["Trace replay & run comparison", "Android app recorder", "CLI regression checks"],
     problem: "An infotainment symptom can span audio focus, frame timing, network calls, and vehicle data. Looking at each stream separately makes the sequence harder to explain.",

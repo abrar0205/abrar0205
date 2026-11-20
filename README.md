@@ -20,11 +20,14 @@ At **Siemens Energy**, I contribute to AI and backend workflows as a working stu
 
 | Project | What you can explore | Links |
 | :--- | :--- | :--- |
-| **IgnitionTrace** | An automotive engineering workbench: replay traces, inspect evidence, compare runs, and capture measurements with an Android app recorder. | [Source & local setup](https://github.com/abrar0205/ignition-trace) |
+| **FitTrace** | Calibrated image measurements, PostgreSQL production traceability, investigation, and paired corrective-action simulations using synthetic data. | [Live workbench](https://abrar0205.github.io/fittrace/) · [Source](https://github.com/abrar0205/fittrace) |
+| **PeopleOps** | SQL-backed manufacturing people analytics, 18 data-quality checks, and privacy-aware aggregate dashboards using synthetic records. | [Live demo](https://abrar0205.github.io/peopleops-ai/) · [Source](https://github.com/abrar0205/peopleops-ai) |
+| **ShiftTwin** | Workforce resilience simulation with max-flow station matching, Monte Carlo trials, and a model-driven 3D factory. | [Live demo](https://abrar0205.github.io/ShiftTwin/) · [Source](https://github.com/abrar0205/ShiftTwin) |
+| **IgnitionTrace** | An automotive engineering workbench: replay traces, inspect evidence, compare runs, and capture measurements with an Android app recorder. | [Live workbench](https://abrar0205.github.io/ignition-trace/) · [Source](https://github.com/abrar0205/ignition-trace) |
 | **EnterpriseIQ** | A document question-answering API with vector + keyword retrieval, role-based filtering, citations, and an offline extractive mode. | [Source & architecture](https://github.com/EnterpriseIQ/enterprise-knowledge-intelligence-platform) |
 | **ModalityOps** | A local-first workbench for signal quality, recording gaps, and shared-event clock estimation across EEG, audio, and video. | [Live demo](https://abrar0205.github.io/modalityops/) · [Source](https://github.com/abrar0205/modalityops) |
 
-IgnitionTrace’s generated scenarios use synthetic traces; its Android recorder measures its own app and permitted vehicle properties. ModalityOps’ hosted demo uses precomputed reports from synthetic signals; fresh analyses run locally.
+FitTrace, PeopleOps, and ShiftTwin use simulated data, with FitTrace's hosted view displaying a generated full-stack snapshot. IgnitionTrace’s generated scenarios use synthetic traces; its Android recorder measures its own app and permitted vehicle properties. ModalityOps’ hosted demo uses precomputed reports from synthetic signals; fresh analyses run locally.
 
 ### The project notebook
 

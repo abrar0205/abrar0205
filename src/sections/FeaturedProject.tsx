@@ -2,14 +2,19 @@ import { featuredProjects } from "../data/projects";
 import { ProjectVisual } from "../components/ProjectVisual";
 import { ArrowUpRightIcon, ArrowRightIcon } from "../components/icons";
 import { SectionHeading } from "../components/SectionHeading";
+import { Reveal } from "../components/Reveal";
 export function FeaturedProject() {
   return <section id="featured" className="section-shell section-pad" aria-labelledby="work-title">
     <div className="section-title-row">
-      <SectionHeading eyebrow="01 / SELECTED WORK" title="Built to be explored." id="work-title" description="Three projects that bring together backend engineering, applied AI, and connected systems." />
+      <SectionHeading eyebrow="01 / SELECTED WORK" title="Built to be explored." id="work-title" description="Explore the engineering behind quality analysis, workforce intelligence, simulation, AI services, and connected systems." />
       <span className="margin-note">PUBLIC CODE.<br />VISIBLE DECISIONS.</span>
     </div>
+    <nav className="project-jump-nav" aria-label="Jump to a featured project">{featuredProjects.map((project, index) =>
+      <a key={project.id} href={"#work-" + project.id}><span>{String(index + 1).padStart(2, "0")}</span><strong>{project.title}</strong><ArrowUpRightIcon aria-hidden="true" /></a>
+    )}</nav>
     <div className="featured-list">{featuredProjects.map((project, index) =>
-      <article className={`featured-project project-${project.id}`} key={project.id} aria-labelledby={`title-${project.id}`}>
+      <Reveal className="featured-reveal" key={project.id} delay={Math.min(index, 2) * .06}>
+      <article id={`work-${project.id}`} className={`featured-project project-${project.id}`} aria-labelledby={`title-${project.id}`}>
         <ProjectVisual kind={project.id} />
         <div className="featured-copy">
           <p className="eyebrow"><span className="project-index">0{index + 1}</span>{project.category}</p>
@@ -34,6 +39,7 @@ export function FeaturedProject() {
           </div>
         </details>
       </article>
+      </Reveal>
     )}</div>
   </section>;
 }
