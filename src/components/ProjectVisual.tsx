@@ -1,5 +1,7 @@
 import type { ProjectKind } from "../data/projects";
+import { NewProjectVisual } from "./NewProjectVisual";
 export function ProjectVisual({ kind }: { kind: ProjectKind }) {
+  if (kind === "fittrace" || kind === "peopleops" || kind === "shifttwin") return <NewProjectVisual kind={kind} />;
   return <div className={`project-visual visual-${kind}`} aria-hidden="true">
     <div className="visual-header"><span>{kind === "ignition" ? "EVENTS → EVIDENCE" : kind === "enterprise" ? "QUESTION → SOURCE" : "SIGNALS → ALIGNMENT"}</span><span>DESIGN SKETCH</span></div>
     {kind === "ignition" ? <svg viewBox="0 0 500 300" fill="none">

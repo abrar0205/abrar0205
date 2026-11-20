@@ -2,6 +2,7 @@ import { useState } from "react";
 import { otherProjects, projectFilters, type ProjectFilter } from "../data/projects";
 import { ProjectCard } from "../components/ProjectCard";
 import { ArrowUpRightIcon } from "../components/icons";
+import { Reveal } from "../components/Reveal";
 export function Projects() {
   const [filter, setFilter] = useState<ProjectFilter>("All work");
   const shown = otherProjects.filter(project => filter === "All work" || project.category === filter);
@@ -10,6 +11,6 @@ export function Projects() {
     <div className="filter-row"><div className="project-filters" role="group" aria-label="Filter additional projects">{projectFilters.map(item =>
       <button key={item} type="button" aria-pressed={filter === item} aria-controls="project-results" onClick={() => setFilter(item)}>{item}</button>
     )}</div><p className="result-count" role="status">{shown.length} projects</p></div>
-    <div className="projects-grid" id="project-results">{shown.map(project => <ProjectCard key={project.title} project={project} />)}</div>
+    <div className="projects-grid" id="project-results">{shown.map((project, index) => <Reveal key={project.title} className="archive-reveal" delay={(index % 3) * .06}><ProjectCard project={project} /></Reveal>)}</div>
   </section>;
 }
